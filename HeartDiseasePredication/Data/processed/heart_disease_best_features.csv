@@ -1,0 +1,181 @@
+oldpeak_eq_st_depression,exercise_induced_angina,num_major_vessels,thal,chest_pain_type,max_heart_rate_achieved,age,simple_risk_score,exercise_stress_score,hr_reserve,bp_category,cholesterol_category,age_group,heart_disease_present,patient_id
+0.0,0,0,normal,2,170,45,1,1.9428571428571428,0.9714285714285714,Elevated,Very_High,Middle (40 - 50),0,0z64un
+1.6,0,0,normal,3,158,54,1,0.3036144578313251,0.9518072289156626,Normal,Borderline,Senior (55 - 65),0,ryoo3j
+0.0,1,3,normal,4,162,77,3,4.265734265734266,1.132867132867133,Elevated,Very_High,Elderly (>65),1,yt1s1x
+0.0,0,0,reversible_defect,4,181,40,2,2.011111111111111,1.0055555555555555,Stage2_Hypertension,Borderline,Young (<40),1,l2xjde
+4.2,0,0,reversible_defect,1,145,59,2,-2.3987577639751554,0.9006211180124224,Hypertensive_Crisis,High,Senior (55 - 65),0,oyt4ek
+0.0,0,0,normal,3,150,42,2,1.6853932584269662,0.8426966292134831,Stage1_Hypertension,Desirable,Middle (40 - 50),0,ldukkw
+2.6,0,2,reversible_defect,4,157,60,2,-0.6375000000000002,0.98125,Stage2_Hypertension,High,Senior (55 - 65),1,2gbyh9
+0.6,1,1,fixed_defect,4,112,57,4,2.774233128834356,0.6871165644171779,Stage2_Hypertension,High,Senior (55 - 65),1,daa9kp
+3.4,1,0,reversible_defect,4,140,59,3,0.33913043478260874,0.8695652173913043,Hypertensive_Crisis,Very_High,Senior (55 - 65),1,3nwy2n
+1.6,0,0,normal,3,158,50,1,0.2588235294117647,0.9294117647058824,Elevated,Borderline,Middle (40 - 50),0,1r508r
+0.4,0,0,normal,4,151,66,2,1.5610389610389612,0.9805194805194806,Elevated,Very_High,Elderly (>65),0,ldg4b9
+0.0,0,0,normal,4,178,42,2,2.0,1.0,Stage2_Hypertension,Borderline,Middle (40 - 50),0,xc17yq
+0.0,0,0,normal,3,158,64,2,2.0256410256410255,1.0128205128205128,Stage2_Hypertension,Very_High,Senior (55 - 65),1,mpggsq
+0.2,1,0,normal,4,152,45,3,3.5371428571428574,0.8685714285714285,Stage1_Hypertension,Borderline,Middle (40 - 50),0,zlyac8
+3.8,1,0,reversible_defect,1,182,38,2,0.20000000000000018,1.0,Elevated,Borderline,Young (<40),1,f06u72
+0.9,1,0,reversible_defect,4,126,50,3,2.5823529411764707,0.7411764705882353,Stage2_Hypertension,Desirable,Middle (40 - 50),1,2fv3rc
+0.6,0,0,normal,2,175,45,2,1.4,1.0,Stage1_Hypertension,Borderline,Middle (40 - 50),0,qyrkxn
+1.4,1,1,reversible_defect,4,144,60,3,2.4000000000000004,0.9,Stage1_Hypertension,High,Senior (55 - 65),1,237mql
+0.0,0,0,normal,2,202,29,2,2.115183246073298,1.057591623036649,Stage1_Hypertension,Borderline,Young (<40),0,mc750a
+0.0,0,2,normal,2,152,58,3,1.876543209876543,0.9382716049382716,Stage1_Hypertension,Very_High,Senior (55 - 65),1,30v796
+0.4,0,2,normal,2,162,71,3,1.774496644295302,1.087248322147651,Hypertensive_Crisis,Very_High,Elderly (>65),0,cvux3j
+0.1,0,3,reversible_defect,4,147,52,2,1.65,0.875,Normal,Borderline,Senior (55 - 65),0,k8899q
+0.3,0,2,normal,4,142,67,2,1.5562091503267974,0.9281045751633987,Normal,Borderline,Elderly (>65),0,jhdvtb
+2.3,0,0,fixed_defect,4,138,66,3,-0.5077922077922077,0.8961038961038961,Hypertensive_Crisis,Borderline,Elderly (>65),0,5g9v0h
+0.0,0,0,normal,2,143,70,3,1.9066666666666667,0.9533333333333334,Stage2_Hypertension,High,Elderly (>65),0,83asqd
+1.5,0,0,normal,3,115,68,3,0.013157894736842035,0.756578947368421,Elevated,Borderline,Elderly (>65),0,gla0im
+0.0,0,1,normal,4,159,57,1,1.950920245398773,0.9754601226993865,Elevated,Very_High,Senior (55 - 65),0,zzmfh7
+0.0,0,0,normal,2,184,52,2,2.1904761904761907,1.0952380952380953,Elevated,Borderline,Senior (55 - 65),0,f4g1ay
+3.0,0,0,normal,3,155,60,1,-1.0625,0.96875,Stage2_Hypertension,Desirable,Senior (55 - 65),1,lek9q9
+0.6,0,0,normal,3,123,51,1,0.8556213017751481,0.727810650887574,Normal,Desirable,Senior (55 - 65),0,8265rl
+2.0,0,0,normal,3,168,41,2,-0.12290502793296088,0.9385474860335196,Stage1_Hypertension,Borderline,Middle (40 - 50),0,6017a1
+1.0,0,3,reversible_defect,4,114,65,4,0.47096774193548385,0.7354838709677419,Stage2_Hypertension,Borderline,Senior (55 - 65),1,z7xkou
+3.1,1,0,reversible_defect,4,155,53,4,0.7562874251497005,0.9281437125748503,Stage2_Hypertension,Borderline,Senior (55 - 65),1,k7ef7h
+0.0,1,0,normal,4,154,64,3,3.9743589743589745,0.9871794871794872,Hypertensive_Crisis,Very_High,Senior (55 - 65),0,0n5fu0
+2.5,0,1,reversible_defect,3,165,58,1,-0.4629629629629628,1.0185185185185186,Normal,Borderline,Senior (55 - 65),1,55xksg
+0.0,0,0,normal,4,186,48,1,2.1627906976744184,1.0813953488372092,Elevated,Borderline,Middle (40 - 50),0,pjgqa3
+0.2,0,1,reversible_defect,3,173,57,2,1.9226993865030677,1.0613496932515338,Stage2_Hypertension,Desirable,Senior (55 - 65),0,xkdz7j
+0.0,0,0,normal,4,163,62,1,2.0632911392405062,1.0316455696202531,Elevated,Borderline,Senior (55 - 65),0,tpuevg
+0.2,1,1,normal,2,121,74,4,3.4575342465753423,0.8287671232876712,Elevated,High,Elderly (>65),0,ascl42
+0.0,1,1,reversible_defect,4,161,52,2,3.916666666666667,0.9583333333333334,Elevated,High,Senior (55 - 65),1,1xwoe6
+1.0,1,0,normal,3,137,61,4,2.7232704402515724,0.8616352201257862,Stage2_Hypertension,High,Senior (55 - 65),0,ty4ik8
+0.0,0,0,normal,3,172,63,2,2.1910828025477707,1.0955414012738853,Stage1_Hypertension,High,Senior (55 - 65),0,gx6yxl
+0.0,0,1,normal,3,130,71,3,1.74496644295302,0.87248322147651,Normal,High,Elderly (>65),0,hlmts5
+0.8,0,1,normal,3,157,65,4,1.2258064516129032,1.0129032258064516,Stage2_Hypertension,Very_High,Senior (55 - 65),0,yx0q6k
+0.0,0,0,normal,3,167,54,1,2.0120481927710845,1.0060240963855422,Normal,High,Senior (55 - 65),0,ep1o51
+0.3,0,0,reversible_defect,2,141,57,1,1.4300613496932515,0.8650306748466258,Elevated,High,Senior (55 - 65),1,gj1e5z
+2.4,0,0,normal,3,166,51,2,-0.4355029585798815,0.9822485207100592,Elevated,High,Senior (55 - 65),0,6219kl
+1.6,0,0,normal,4,125,71,2,0.07785234899328852,0.8389261744966443,Normal,Desirable,Elderly (>65),0,rp9g6x
+1.4,0,1,reversible_defect,2,103,62,2,-0.09620253164556947,0.6518987341772152,Elevated,High,Senior (55 - 65),1,1aeaff
+0.0,0,0,normal,2,172,46,1,1.9770114942528736,0.9885057471264368,Normal,Borderline,Middle (40 - 50),0,y3prof
+1.8,1,2,reversible_defect,4,120,46,4,1.5793103448275863,0.6896551724137931,Stage2_Hypertension,Very_High,Middle (40 - 50),1,3drd48
+1.9,0,1,normal,3,162,43,2,-0.06949152542372872,0.9152542372881356,Stage1_Hypertension,Very_High,Middle (40 - 50),0,ejo7p3
+1.8,1,3,reversible_defect,4,132,63,5,1.8815286624203822,0.8407643312101911,Stage1_Hypertension,Very_High,Senior (55 - 65),1,r7y4i1
+0.6,1,1,fixed_defect,3,142,56,4,3.131707317073171,0.8658536585365854,Stage1_Hypertension,High,Senior (55 - 65),1,mznwxv
+0.0,0,0,normal,4,169,61,2,2.1257861635220126,1.0628930817610063,Stage1_Hypertension,Very_High,Senior (55 - 65),1,27oevk
+0.4,1,0,normal,3,179,44,3,3.6340909090909093,1.0170454545454546,Stage1_Hypertension,Borderline,Middle (40 - 50),0,jwqi3k
+2.8,1,1,reversible_defect,4,126,54,3,0.7180722891566267,0.7590361445783133,Normal,Borderline,Senior (55 - 65),1,328lkl
+1.8,1,2,reversible_defect,4,99,62,3,1.4531645569620253,0.6265822784810127,Elevated,High,Senior (55 - 65),1,tlk9o8
+0.0,0,0,normal,2,162,42,1,1.8202247191011236,0.9101123595505618,Elevated,High,Middle (40 - 50),0,aq2vrq
+0.0,0,1,normal,4,177,44,0,2.0113636363636362,1.0056818181818181,Normal,Desirable,Middle (40 - 50),1,ilogfb
+1.6,0,0,reversible_defect,3,160,67,2,0.49150326797385624,1.0457516339869282,Normal,Very_High,Elderly (>65),0,rv6siv
+1.2,1,0,reversible_defect,4,142,51,4,2.480473372781065,0.8402366863905325,Stage1_Hypertension,Very_High,Senior (55 - 65),1,m2a4i9
+1.6,1,0,reversible_defect,4,103,56,5,1.6560975609756097,0.6280487804878049,Stage1_Hypertension,High,Senior (55 - 65),1,pwigd8
+0.0,0,0,normal,2,138,45,1,1.5771428571428572,0.7885714285714286,Normal,Desirable,Middle (40 - 50),0,qwapdq
+0.0,0,0,normal,4,159,50,1,1.8705882352941177,0.9352941176470588,Normal,High,Middle (40 - 50),0,4sd1xn
+0.0,1,0,reversible_defect,4,156,35,3,3.6864864864864866,0.8432432432432433,Elevated,High,Young (<40),1,nck22c
+2.4,0,3,normal,4,109,70,4,-0.9466666666666665,0.7266666666666667,Stage1_Hypertension,Very_High,Elderly (>65),1,m6zksp
+1.2,0,0,normal,4,181,43,1,0.8451977401129944,1.0225988700564972,Normal,Very_High,Middle (40 - 50),0,f70grj
+1.4,0,0,normal,2,161,55,2,0.5515151515151515,0.9757575757575757,Stage1_Hypertension,High,Senior (55 - 65),0,k1art8
+2.0,0,3,reversible_defect,3,139,49,1,-0.3742690058479532,0.8128654970760234,Elevated,Desirable,Middle (40 - 50),1,mcwqgs
+0.0,0,0,normal,2,170,44,1,1.9318181818181819,0.9659090909090909,Elevated,Borderline,Middle (40 - 50),0,3jsjqk
+0.1,0,0,normal,4,143,47,2,1.553179190751445,0.8265895953757225,Normal,Borderline,Middle (40 - 50),0,ik7hfs
+0.5,0,0,reversible_defect,3,162,52,2,1.4285714285714286,0.9642857142857143,Hypertensive_Crisis,Desirable,Senior (55 - 65),0,qwj1yf
+0.0,0,0,normal,3,170,37,1,1.8579234972677596,0.9289617486338798,Elevated,Borderline,Young (<40),0,qvhk9e
+2.2,0,1,fixed_defect,3,134,59,3,-0.5354037267080747,0.8322981366459627,Elevated,Borderline,Senior (55 - 65),1,igwnqo
+1.0,1,2,reversible_defect,4,165,66,5,3.142857142857143,1.0714285714285714,Hypertensive_Crisis,Borderline,Elderly (>65),1,4v0q7o
+0.1,0,0,normal,3,169,52,1,1.9119047619047618,1.005952380952381,Stage1_Hypertension,Desirable,Senior (55 - 65),0,hh2awp
+2.2,1,1,reversible_defect,4,109,54,3,1.1132530120481925,0.6566265060240963,Elevated,High,Senior (55 - 65),1,vfjppl
+2.8,1,2,reversible_defect,4,142,60,3,0.9750000000000001,0.8875,Stage2_Hypertension,High,Senior (55 - 65),1,6lu42b
+1.4,0,1,reversible_defect,4,147,63,2,0.472611464968153,0.9363057324840764,Stage1_Hypertension,High,Senior (55 - 65),1,shiro4
+1.2,0,0,normal,3,152,53,2,0.6203592814371257,0.9101796407185628,Stage1_Hypertension,Desirable,Senior (55 - 65),0,3wl3z4
+1.4,0,1,reversible_defect,4,113,54,1,-0.03855421686746974,0.6807228915662651,Elevated,Desirable,Senior (55 - 65),1,ebioez
+1.0,0,0,reversible_defect,2,168,48,1,0.9534883720930232,0.9767441860465116,Normal,Borderline,Middle (40 - 50),1,37c0vm
+3.0,1,2,reversible_defect,4,130,58,3,0.6049382716049383,0.8024691358024691,Elevated,High,Senior (55 - 65),1,v52zcs
+0.5,0,0,normal,3,149,51,2,1.2633136094674555,0.8816568047337278,Stage1_Hypertension,High,Senior (55 - 65),0,6nkcaw
+0.8,0,3,normal,3,126,49,1,0.6736842105263157,0.7368421052631579,Normal,Desirable,Middle (40 - 50),1,hfp05i
+0.0,1,0,normal,3,172,41,2,3.921787709497207,0.9608938547486033,Normal,High,Middle (40 - 50),0,grfxwd
+0.0,1,1,reversible_defect,4,162,59,2,4.012422360248447,1.0062111801242235,Stage2_Hypertension,Desirable,Senior (55 - 65),1,bvcxah
+1.6,0,0,normal,3,174,57,1,0.5349693251533743,1.0674846625766872,Stage2_Hypertension,Desirable,Senior (55 - 65),0,i49srr
+0.0,0,0,normal,2,155,55,2,1.878787878787879,0.9393939393939394,Stage1_Hypertension,High,Senior (55 - 65),0,93dbhq
+0.0,0,0,normal,2,162,49,2,1.894736842105263,0.9473684210526315,Stage1_Hypertension,High,Middle (40 - 50),0,jscmp8
+0.9,1,2,normal,4,125,67,4,2.733986928104575,0.8169934640522876,Normal,High,Elderly (>65),1,zaytyf
+0.0,0,0,normal,3,170,54,3,2.0481927710843375,1.0240963855421688,Stage1_Hypertension,Very_High,Senior (55 - 65),0,wze8qm
+1.2,0,2,reversible_defect,4,170,60,2,0.925,1.0625,Stage2_Hypertension,High,Senior (55 - 65),1,w3933i
+0.6,0,0,normal,3,175,44,0,1.3886363636363637,0.9943181818181818,Normal,Desirable,Middle (40 - 50),0,7uch9x
+1.0,0,1,reversible_defect,3,151,68,2,0.986842105263158,0.993421052631579,Normal,High,Elderly (>65),0,dy5hxt
+2.0,0,2,fixed_defect,4,132,64,3,-0.3076923076923077,0.8461538461538461,Stage2_Hypertension,Borderline,Senior (55 - 65),1,c0gkqc
+0.1,0,1,normal,1,131,69,4,1.6350993377483443,0.8675496688741722,Hypertensive_Crisis,Borderline,Elderly (>65),0,z5g5p3
+0.8,0,0,normal,3,148,65,3,1.1096774193548387,0.9548387096774194,Stage2_Hypertension,High,Senior (55 - 65),0,h3uzv8
+1.0,0,0,normal,1,162,58,3,1.0,1.0,Stage2_Hypertension,High,Senior (55 - 65),0,bthqr4
+0.0,0,0,normal,3,182,39,2,2.0110497237569063,1.0055248618784531,Stage2_Hypertension,Very_High,Young (<40),0,rfj25e
+1.3,0,0,normal,2,153,56,2,0.5658536585365854,0.9329268292682927,Stage2_Hypertension,High,Senior (55 - 65),0,9f92et
+1.2,1,1,reversible_defect,4,142,59,2,2.563975155279503,0.8819875776397516,Normal,Borderline,Senior (55 - 65),1,24fopx
+1.5,0,1,normal,3,142,51,3,0.180473372781065,0.8402366863905325,Stage2_Hypertension,Very_High,Senior (55 - 65),0,ldr1mz
+0.2,0,0,reversible_defect,3,133,64,2,1.505128205128205,0.8525641025641025,Stage2_Hypertension,Very_High,Senior (55 - 65),0,wokyol
+2.0,0,2,normal,4,122,64,3,-0.4358974358974359,0.782051282051282,Stage1_Hypertension,Very_High,Senior (55 - 65),0,p5orwa
+1.6,0,0,reversible_defect,3,165,54,2,0.38795180722891565,0.9939759036144579,Stage2_Hypertension,Borderline,Senior (55 - 65),0,s8dx1q
+0.8,1,1,reversible_defect,4,145,55,3,2.9575757575757575,0.8787878787878788,Hypertensive_Crisis,High,Senior (55 - 65),1,7kf275
+1.4,1,1,normal,1,125,51,3,2.0792899408284025,0.7396449704142012,Elevated,Borderline,Senior (55 - 65),0,e68djo
+0.5,0,0,reversible_defect,4,166,48,1,1.430232558139535,0.9651162790697675,Elevated,High,Middle (40 - 50),1,3ze7pv
+0.2,1,1,reversible_defect,4,105,64,3,3.1461538461538465,0.6730769230769231,Elevated,High,Senior (55 - 65),0,0g192k
+1.1,0,0,normal,2,162,50,1,0.8058823529411763,0.9529411764705882,Elevated,High,Middle (40 - 50),0,3s141s
+4.2,1,3,reversible_defect,4,122,51,4,-0.7562130177514792,0.7218934911242604,Stage2_Hypertension,High,Senior (55 - 65),1,6r9x2j
+1.6,1,0,reversible_defect,3,150,68,5,2.3736842105263154,0.9868421052631579,Hypertensive_Crisis,High,Elderly (>65),1,sqddbc
+0.0,0,0,normal,3,179,41,1,2.0,1.0,Normal,High,Middle (40 - 50),0,nizd9c
+0.0,0,0,normal,3,165,58,3,2.037037037037037,1.0185185185185186,Stage2_Hypertension,Borderline,Senior (55 - 65),0,lpub9d
+0.0,0,0,fixed_defect,2,132,41,3,1.4748603351955307,0.7374301675977654,Stage1_Hypertension,Borderline,Middle (40 - 50),0,bv01fp
+0.0,0,0,reversible_defect,4,158,41,0,1.76536312849162,0.88268156424581,Normal,Desirable,Middle (40 - 50),1,9dqkpy
+1.2,1,1,reversible_defect,4,132,55,4,2.4000000000000004,0.8,Stage1_Hypertension,Very_High,Senior (55 - 65),1,2fqzg8
+1.9,0,3,normal,4,106,62,4,-0.5582278481012657,0.6708860759493671,Stage1_Hypertension,High,Senior (55 - 65),1,1jruhz
+1.4,0,1,normal,1,174,65,4,0.8451612903225807,1.1225806451612903,Stage1_Hypertension,High,Senior (55 - 65),1,ju1wdc
+0.7,0,0,normal,2,192,34,1,1.364516129032258,1.032258064516129,Normal,Borderline,Young (<40),0,f4n8ny
+0.4,0,0,fixed_defect,4,148,57,1,1.4159509202453986,0.9079754601226994,Stage2_Hypertension,Desirable,Senior (55 - 65),0,97v1yz
+0.0,0,3,normal,3,173,53,3,2.07185628742515,1.035928143712575,Stage1_Hypertension,High,Senior (55 - 65),0,6jcc1y
+1.5,1,3,normal,4,108,67,5,1.911764705882353,0.7058823529411765,Hypertensive_Crisis,High,Elderly (>65),1,tbo0wx
+0.8,0,0,normal,3,151,65,3,1.1483870967741936,0.9741935483870968,Hypertensive_Crisis,Very_High,Senior (55 - 65),0,4b32pd
+0.6,0,0,normal,4,122,42,2,0.7707865168539326,0.6853932584269663,Normal,High,Middle (40 - 50),0,0ryxtv
+0.4,0,0,reversible_defect,3,147,54,1,1.3710843373493975,0.8855421686746988,Elevated,High,Senior (55 - 65),0,w1wgrq
+2.6,1,0,reversible_defect,4,125,70,4,1.0666666666666667,0.8333333333333334,Stage2_Hypertension,Desirable,Elderly (>65),1,syvayq
+2.2,1,1,normal,4,96,64,3,1.0307692307692307,0.6153846153846154,Elevated,High,Senior (55 - 65),1,lq4ldx
+0.0,1,1,reversible_defect,3,154,51,2,3.8224852071005917,0.9112426035502958,Normal,Borderline,Senior (55 - 65),0,0zldrz
+1.0,0,0,normal,4,122,58,2,0.5061728395061729,0.7530864197530864,Normal,High,Senior (55 - 65),0,98kb5h
+1.4,0,0,normal,2,172,41,2,0.5217877094972068,0.9608938547486033,Stage1_Hypertension,Borderline,Middle (40 - 50),0,1wwvr0
+3.2,0,2,reversible_defect,3,173,58,2,-1.0641975308641975,1.0679012345679013,Stage1_Hypertension,Borderline,Senior (55 - 65),1,f1ziva
+0.0,0,2,reversible_defect,4,171,58,1,2.111111111111111,1.0555555555555556,Elevated,High,Senior (55 - 65),1,e3dnw3
+0.4,0,0,reversible_defect,4,140,65,1,1.4064516129032256,0.9032258064516129,Elevated,Desirable,Senior (55 - 65),0,08usun
+0.0,1,2,reversible_defect,4,150,48,4,3.744186046511628,0.872093023255814,Stage1_Hypertension,High,Middle (40 - 50),1,fzzkh7
+1.4,1,0,normal,4,154,62,3,2.549367088607595,0.9746835443037974,Stage2_Hypertension,High,Senior (55 - 65),1,9upsjl
+0.0,0,0,normal,3,180,44,2,2.0454545454545454,1.0227272727272727,Stage2_Hypertension,Borderline,Middle (40 - 50),0,ebloe5
+0.0,0,0,normal,2,188,44,2,2.1363636363636362,1.0681818181818181,Stage1_Hypertension,Borderline,Middle (40 - 50),0,srm6ut
+5.6,1,0,reversible_defect,4,111,55,4,-2.254545454545454,0.6727272727272727,Stage2_Hypertension,Borderline,Senior (55 - 65),1,noxsnw
+1.9,0,0,reversible_defect,1,162,56,0,0.07560975609756104,0.9878048780487805,Elevated,Desirable,Senior (55 - 65),0,471q03
+0.0,0,0,reversible_defect,2,173,44,1,1.9659090909090908,0.9829545454545454,Elevated,High,Middle (40 - 50),0,uvwymz
+2.0,1,0,reversible_defect,4,114,40,2,1.2666666666666666,0.6333333333333333,Normal,Desirable,Young (<40),1,7eyvsi
+2.2,1,3,reversible_defect,4,131,58,3,1.4172839506172838,0.808641975308642,Elevated,Borderline,Senior (55 - 65),1,a946ij
+0.0,0,2,normal,2,179,63,1,2.2802547770700636,1.1401273885350318,Stage2_Hypertension,Desirable,Senior (55 - 65),0,drdvf9
+1.4,1,0,reversible_defect,1,178,40,2,2.577777777777778,0.9888888888888889,Stage2_Hypertension,Desirable,Young (<40),0,z8yl4y
+2.6,0,2,normal,1,145,61,2,-0.7761006289308177,0.9119496855345912,Stage1_Hypertension,Borderline,Senior (55 - 65),1,mxabaz
+0.0,0,0,normal,3,152,47,1,1.7572254335260116,0.8786127167630058,Normal,High,Middle (40 - 50),1,cpqg4x
+0.4,0,1,reversible_defect,3,150,57,1,1.4404907975460124,0.9202453987730062,Elevated,Borderline,Senior (55 - 65),1,8c36yw
+0.0,0,0,reversible_defect,2,156,54,1,1.8795180722891567,0.9397590361445783,Normal,Very_High,Senior (55 - 65),0,x4yp0f
+0.5,0,1,normal,3,152,54,1,1.3313253012048192,0.9156626506024096,Elevated,High,Senior (55 - 65),0,9at0il
+1.6,1,0,reversible_defect,4,130,35,2,1.8054054054054054,0.7027027027027027,Elevated,Desirable,Young (<40),1,nfag5b
+0.0,0,1,normal,4,153,44,1,1.7386363636363635,0.8693181818181818,Normal,High,Middle (40 - 50),1,strmq8
+1.2,0,1,reversible_defect,3,97,62,3,0.027848101265822933,0.6139240506329114,Stage1_Hypertension,High,Senior (55 - 65),1,43k3gx
+0.0,0,0,normal,1,125,59,3,1.5527950310559007,0.7763975155279503,Hypertensive_Crisis,High,Senior (55 - 65),1,fz84ac
+1.8,0,2,normal,1,151,69,3,0.19999999999999996,1.0,Stage2_Hypertension,Borderline,Elderly (>65),0,02cipp
+0.2,0,0,normal,3,139,48,3,1.416279069767442,0.8081395348837209,Stage1_Hypertension,High,Middle (40 - 50),0,1ennzl
+0.0,0,0,normal,3,169,44,1,1.9204545454545454,0.9602272727272727,Elevated,Borderline,Middle (40 - 50),0,isq8yp
+2.4,1,2,reversible_defect,4,132,60,4,1.25,0.825,Stage1_Hypertension,Borderline,Senior (55 - 65),1,ewckbx
+0.6,0,0,normal,2,171,49,2,1.4,1.0,Stage1_Hypertension,High,Middle (40 - 50),0,dtljkq
+1.4,1,2,reversible_defect,4,160,60,3,2.6,1.0,Normal,Borderline,Senior (55 - 65),1,a2kf1z
+6.2,0,3,reversible_defect,4,145,62,1,-4.364556962025317,0.9177215189873418,Hypertensive_Crisis,Desirable,Senior (55 - 65),1,usnkhx
+0.0,1,3,reversible_defect,4,147,45,4,3.6799999999999997,0.84,Stage2_Hypertension,Very_High,Middle (40 - 50),1,hltlsl
+0.0,1,0,reversible_defect,4,111,53,4,3.3293413173652695,0.6646706586826348,Stage2_Hypertension,Borderline,Senior (55 - 65),0,l0c19s
+0.0,0,1,normal,3,172,67,3,2.2483660130718954,1.1241830065359477,Stage2_Hypertension,High,Elderly (>65),0,lcexsf
+0.0,1,0,reversible_defect,4,168,57,3,4.061349693251534,1.030674846625767,Stage1_Hypertension,Borderline,Senior (55 - 65),0,y3m2bd
+0.8,0,0,reversible_defect,4,144,46,2,0.8551724137931034,0.8275862068965517,Elevated,High,Middle (40 - 50),1,qcjf51
+2.3,0,0,fixed_defect,1,150,63,3,-0.3891719745222928,0.9554140127388535,Stage2_Hypertension,Borderline,Senior (55 - 65),0,7zbya5
+1.8,1,0,normal,1,144,64,2,2.046153846153846,0.9230769230769231,Normal,Borderline,Senior (55 - 65),0,23gf0e
+0.8,1,0,reversible_defect,4,111,58,4,2.5703703703703704,0.6851851851851852,Stage2_Hypertension,High,Senior (55 - 65),1,qhz9ye
+0.1,1,1,normal,4,132,66,3,3.614285714285714,0.8571428571428571,Normal,Borderline,Elderly (>65),1,u25507
+1.2,0,0,reversible_defect,4,140,39,2,0.3469613259668509,0.7734806629834254,Normal,Borderline,Young (<40),1,j9tw19
+1.6,1,0,reversible_defect,4,173,51,3,2.4473372781065086,1.0236686390532543,Stage2_Hypertension,High,Senior (55 - 65),1,5o32oi
+1.2,0,0,normal,4,160,54,2,0.727710843373494,0.963855421686747,Stage2_Hypertension,Borderline,Senior (55 - 65),0,o63ri2
+0.2,0,2,reversible_defect,4,163,67,3,1.930718954248366,1.065359477124183,Elevated,High,Elderly (>65),1,5qfar3
+3.4,1,0,normal,4,117,55,4,0.0181818181818183,0.7090909090909091,Hypertensive_Crisis,Very_High,Senior (55 - 65),1,2s2b1f
+1.8,1,0,reversible_defect,3,131,64,3,1.8794871794871795,0.8397435897435898,Elevated,Very_High,Senior (55 - 65),1,nsd00i
+0.0,0,2,normal,3,175,48,2,2.0348837209302326,1.0174418604651163,Elevated,High,Middle (40 - 50),0,0xw93k
+0.0,0,1,normal,3,163,54,2,1.963855421686747,0.9819277108433735,Hypertensive_Crisis,Borderline,Senior (55 - 65),0,2nx10r
