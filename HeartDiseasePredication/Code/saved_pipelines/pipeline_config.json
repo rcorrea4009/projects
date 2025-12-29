@@ -1,7 +1,7 @@
 {
   "project": "Heart Disease Prediction - Modular Pipeline",
   "version": "1.0",
-  "timestamp": "2025-12-29T13:12:17.139563",
+  "timestamp": "2025-12-29T18:22:19.468236",
   "feature_groups": {
     "numerical_features": [
       "age",
