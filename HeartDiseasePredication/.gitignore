@@ -35,8 +35,9 @@ env.bak/
 # Jupyter Notebook
 .ipynb_checkpoints/
 
-# Data files
-*.csv
+# Data files (don't commit large files)
+Data/processed/
+Data/models/
 *.pkl
 *.pickle
 *.h5
@@ -46,6 +47,11 @@ env.bak/
 logs/
 *.log
 
+#can be large files
+"saved_pipelines/"
+echo "Output/"
+
 # OS
 .DS_Store
 Thumbs.db
+EOF
