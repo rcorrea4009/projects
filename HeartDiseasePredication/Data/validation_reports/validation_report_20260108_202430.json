@@ -1,0 +1,230 @@
+{
+  "timestamp": "20260108_202430",
+  "train_samples": 117,
+  "test_samples": 36,
+  "validation_passed": false,
+  "results": {
+    "feature_consistency": {
+      "passed": false,
+      "checks": {
+        "all_column_present": true,
+        "data_types_consistent": true,
+        "value_ranges_valid": true
+      },
+      "issues": [
+        "Categorical value issues: [{'column': 'resting_ekg_results', 'new_categories': [1], 'count': 1}, {'column': 'simple_risk_score', 'new_categories': [0], 'count': 1}, {'column': 'metabolic_score', 'new_categories': [0], 'count': 1}]"
+      ]
+    },
+    "data_leakage": {
+      "passed": true,
+      "checks": {
+        "no_patient_overlap": true,
+        "no_temporal_leakage": true,
+        "target_distribution_ok": true
+      },
+      "issues": [
+        "High correlations: [{'feature_pair': 'resting_blood_pressure-bp_squared', 'train_correlation': 0.9962573864304518, 'test_correlation': 0.9960687344300232}, {'feature_pair': 'serum_cholesterol_mg_per_dl-cholesterol_squared', 'train_correlation': 0.9710337605836385, 'test_correlation': 0.9958456045344319}, {'feature_pair': 'serum_cholesterol_mg_per_dl-log_cholesterol', 'train_correlation': 0.9759025185000643, 'test_correlation': 0.9953395730246494}, {'feature_pair': 'oldpeak_eq_st_depression-log_oldpeak', 'train_correlation': 0.9749308829829685, 'test_correlation': 0.9875251263049317}, {'feature_pair': 'age-predicted_max_hr', 'train_correlation': 0.9999999999999997, 'test_correlation': 1.0000000000000002}, {'feature_pair': 'age-age_squared', 'train_correlation': 0.9944639058858525, 'test_correlation': 0.996009814648728}, {'feature_pair': 'predicted_max_hr-age_squared', 'train_correlation': 0.9944639058858523, 'test_correlation': 0.9960098146487281}]"
+      ]
+    },
+    "statistical_properties": {
+      "passed": true,
+      "checks": {
+        "distributions_similar": true,
+        "class_distribution_preserved": true
+      },
+      "issues": [
+        "High correlation difference: 0.142"
+      ],
+      "statistics": {
+        "resting_blood_pressure": {
+          "ks_statistic": 0.14316239316239315,
+          "ks_pvalue": 0.5751896876239267,
+          "train_mean": 131.2905982905983,
+          "test_mean": 134.97222222222223,
+          "train_std": 16.140044347383753,
+          "test_std": 20.114651534371816,
+          "mean_diff_pct": 2.8041794154026434
+        },
+        "serum_cholesterol_mg_per_dl": {
+          "ks_statistic": 0.19230769230769232,
+          "ks_pvalue": 0.2291320446314134,
+          "train_mean": 248.7094017094017,
+          "test_mean": 253.72222222222223,
+          "train_std": 55.77016564762113,
+          "test_std": 47.554847198403365,
+          "mean_diff_pct": 2.0155331798343634
+        },
+        "oldpeak_eq_st_depression": {
+          "ks_statistic": 0.11965811965811966,
+          "ks_pvalue": 0.780389867643449,
+          "train_mean": 0.9726495726495727,
+          "test_mean": 1.2111111111111112,
+          "train_std": 1.1406761403555965,
+          "test_std": 1.2743127621871388,
+          "mean_diff_pct": 24.51669595782074
+        },
+        "age": {
+          "ks_statistic": 0.1282051282051282,
+          "ks_pvalue": 0.7070763054893937,
+          "train_mean": 55.00854700854701,
+          "test_mean": 55.111111111111114,
+          "train_std": 9.694022088376233,
+          "test_std": 7.618690467819548,
+          "mean_diff_pct": 0.1864512119328769
+        },
+        "max_heart_rate_achieved": {
+          "ks_statistic": 0.12606837606837606,
+          "ks_pvalue": 0.7261645931544354,
+          "train_mean": 150.44444444444446,
+          "test_mean": 147.38888888888889,
+          "train_std": 22.46700432912462,
+          "test_std": 22.45666019918339,
+          "mean_diff_pct": 2.031019202363378
+        },
+        "predicted_max_hr": {
+          "ks_statistic": 0.1282051282051282,
+          "ks_pvalue": 0.7070763054893937,
+          "train_mean": 164.991452991453,
+          "test_mean": 164.88888888888889,
+          "train_std": 9.694022088376236,
+          "test_std": 7.618690467819548,
+          "mean_diff_pct": 0.06216328222130968
+        },
+        "hr_reserve": {
+          "ks_statistic": 0.13675213675213677,
+          "ks_pvalue": 0.6313075826208475,
+          "train_mean": 0.9116541665266157,
+          "test_mean": 0.8940003166636268,
+          "train_std": 0.12405560611928962,
+          "test_std": 0.13133876701709837,
+          "mean_diff_pct": 1.9364634651152555
+        },
+        "exercise_stress_score": {
+          "ks_statistic": 0.19017094017094016,
+          "ks_pvalue": 0.23998208630275597,
+          "train_mean": 1.5002314099763079,
+          "test_mean": 1.1880006333272537,
+          "train_std": 1.3443775389266468,
+          "test_std": 1.3067143686573857,
+          "mean_diff_pct": 20.81217434675528
+        },
+        "age_cholesterol_interaction": {
+          "ks_statistic": 0.14957264957264957,
+          "ks_pvalue": 0.5200670431116946,
+          "train_mean": 138.17735042735043,
+          "test_mean": 140.57722222222222,
+          "train_std": 45.69979180879844,
+          "test_std": 35.329788613747226,
+          "mean_diff_pct": 1.7368054803841146
+        },
+        "bp_age_interaction": {
+          "ks_statistic": 0.1282051282051282,
+          "ks_pvalue": 0.7070763054893937,
+          "train_mean": 72.674188034188,
+          "test_mean": 75.0177777777778,
+          "train_std": 17.82845141124038,
+          "test_std": 17.95831349242081,
+          "mean_diff_pct": 3.2247897183072722
+        },
+        "st_angina_interaction": {
+          "ks_statistic": 0.1047008547008547,
+          "ks_pvalue": 0.8913990511829557,
+          "train_mean": 0.43076923076923074,
+          "test_mean": 0.575,
+          "train_std": 0.9348115740859725,
+          "test_std": 1.184513160995448,
+          "mean_diff_pct": 33.482142857142854
+        },
+        "age_squared": {
+          "ks_statistic": 0.1282051282051282,
+          "ks_pvalue": 0.7070763054893937,
+          "train_mean": 3119.1111111111113,
+          "test_mean": 3093.6666666666665,
+          "train_std": 1051.3839465509895,
+          "test_std": 832.7391634153604,
+          "mean_diff_pct": 0.815759475634095
+        },
+        "cholesterol_squared": {
+          "ks_statistic": 0.19230769230769232,
+          "ks_pvalue": 0.2291320446314134,
+          "train_mean": 6.494009401709401,
+          "test_mean": 6.65736111111111,
+          "train_std": 3.4027132743967234,
+          "test_std": 2.3959562259628533,
+          "mean_diff_pct": 2.5154215107651487
+        },
+        "bp_squared": {
+          "ks_statistic": 0.14316239316239315,
+          "ks_pvalue": 0.5751896876239267,
+          "train_mean": 1.749549572649573,
+          "test_mean": 1.861086111111111,
+          "train_std": 0.43905683388763767,
+          "test_std": 0.5718500733347999,
+          "mean_diff_pct": 6.375157366511408
+        },
+        "log_cholesterol": {
+          "ks_statistic": 0.19230769230769232,
+          "ks_pvalue": 0.2291320446314134,
+          "train_mean": 5.49795668666007,
+          "test_mean": 5.522343041168915,
+          "train_std": 0.20992324939646287,
+          "test_std": 0.19430711107738444,
+          "mean_diff_pct": 0.4435530488629342
+        },
+        "log_oldpeak": {
+          "ks_statistic": 0.11965811965811966,
+          "ks_pvalue": 0.780389867643449,
+          "train_mean": 1.0300714695716295,
+          "test_mean": 1.095005064487035,
+          "train_std": 0.33242478150504906,
+          "test_std": 0.37831985362892173,
+          "mean_diff_pct": 6.3037951087422215
+        },
+        "cholesterol_age_ratio": {
+          "ks_statistic": 0.12606837606837606,
+          "ks_pvalue": 0.7261645931544354,
+          "train_mean": 4.628369892094106,
+          "test_mean": 4.667769042271442,
+          "train_std": 1.1250509267137676,
+          "test_std": 0.9935359365168357,
+          "mean_diff_pct": 0.8512532726616133
+        },
+        "bp_age_ratio": {
+          "ks_statistic": 0.13247863247863248,
+          "ks_pvalue": 0.6698024644119237,
+          "train_mean": 2.4540330941398145,
+          "test_mean": 2.4748695801564278,
+          "train_std": 0.489255156070225,
+          "test_std": 0.37676124798984845,
+          "mean_diff_pct": 0.849071109365656
+        },
+        "hr_bp_ratio": {
+          "ks_statistic": 0.1452991452991453,
+          "ks_pvalue": 0.5562892059286232,
+          "train_mean": 1.161779539937078,
+          "test_mean": 1.1172845410309928,
+          "train_std": 0.2178355289693323,
+          "test_std": 0.24550944513543263,
+          "mean_diff_pct": 3.8299003706413233
+        }
+      },
+      "class_distribution": {
+        "train": {
+          "0": 0.5555555555555556,
+          "1": 0.4444444444444444
+        },
+        "test": {
+          "0": 0.5555555555555556,
+          "1": 0.4444444444444444
+        },
+        "train_imbalance": 0.11111111111111116,
+        "test_imbalance": 0.11111111111111116
+      },
+      "correlation_analysis": {
+        "train_corr_mean": 0.3551776493507951,
+        "test_corr_mean": 0.3833576033149858,
+        "corr_diff_mean": 0.14168649071714468
+      }
+    }
+  }
+}
