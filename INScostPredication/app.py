@@ -7,8 +7,11 @@ import os
 base_path = os.path.dirname(__file__)
 
 # 1. Join and load that path with your file names
-model = os.path.join(base_path, 'insurance_cost_model.pkl')
-preprocessor = os.path.join(base_path, 'preprocessor.pkl')
+model_path = os.path.join(base_path, 'insurance_cost_model.pkl')
+preprocessor_path = os.path.join(base_path, 'preprocessor.pkl')
+
+model = joblib.load(model_path)
+preprocessor = joblib.load(preprocessor_path)
 
 # UI Title and Description
 st.title("🏥 Insurance Cost Predictor")
