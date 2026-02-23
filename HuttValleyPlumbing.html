@@ -341,7 +341,7 @@
             letter-spacing: 3px;
         }
 
-        /* === CONTACT SECTION === */
+        /* === CONTACT SECTION (with map instead of form) === */
         .contact-section {
             background: #002b4a;
             color: white;
@@ -387,106 +387,51 @@
             line-height: 1.4;
         }
 
-        .contact-form {
+        /* Map container styles */
+        .map-container {
             background: white;
             border-radius: 30px;
-            padding: 40px;
-            color: #002b4a;
+            padding: 20px;
+            height: 100%;
+            min-height: 400px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        input, textarea {
+        .map-container iframe {
             width: 100%;
-            padding: 15px 20px;
-            border: 2px solid #e2eef7;
-            border-radius: 60px;
-            font-size: 1rem;
-            font-family: inherit;
-            transition: 0.1s;
-        }
-
-        textarea {
-            border-radius: 30px;
-            resize: vertical;
-        }
-
-        input:focus, textarea:focus {
-            outline: none;
-            border-color: #e67e22;
-        }
-
-        .btn {
-            background: #e67e22;
-            color: white;
+            height: 100%;
+            min-height: 360px;
+            border-radius: 20px;
             border: none;
-            padding: 16px 40px;
-            border-radius: 60px;
-            font-weight: 600;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background 0.2s;
-            width: 100%;
         }
 
-        .btn:hover {
-            background: #c96917;
-        }
-
-        /* === THANK YOU PAGE STYLES === */
-        .thank-you-section {
-            min-height: 60vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .map-placeholder {
+            background: #eaf2f9;
+            border-radius: 20px;
+            padding: 40px;
             text-align: center;
-            padding: 60px 20px;
-            background: linear-gradient(135deg, #f0f6fc 0%, #ffffff 100%);
-        }
-
-        .thank-you-card {
-            background: white;
-            border-radius: 40px;
-            padding: 60px 40px;
-            max-width: 600px;
-            margin: 0 auto;
-            box-shadow: 0 20px 40px rgba(0,35,60,0.1);
-            border: 1px solid #e0ecf5;
-        }
-
-        .thank-you-card i {
-            font-size: 5rem;
-            color: #27ae60;
-            margin-bottom: 25px;
-        }
-
-        .thank-you-card h2 {
-            font-size: 2.5rem;
             color: #002b4a;
+        }
+
+        .map-placeholder i {
+            font-size: 4rem;
+            color: #e67e22;
             margin-bottom: 20px;
         }
 
-        .thank-you-card p {
-            font-size: 1.2rem;
-            color: #2c5779;
-            margin-bottom: 30px;
-        }
-
-        .thank-you-card .btn {
+        .get-directions-btn {
             display: inline-block;
-            width: auto;
-            padding: 16px 50px;
-            text-decoration: none;
             background: #e67e22;
             color: white;
-            border-radius: 60px;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 20px;
             font-weight: 600;
             transition: background 0.2s;
         }
 
-        .thank-you-card .btn:hover {
+        .get-directions-btn:hover {
             background: #c96917;
         }
 
@@ -543,6 +488,9 @@
                 display: none;
             }
             .hero h1 { font-size: 2.4rem; }
+            .map-container {
+                min-height: 350px;
+            }
         }
     </style>
 </head>
@@ -658,12 +606,12 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION with Formspree integration -->
+    <!-- CONTACT SECTION with MAP instead of form -->
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>CONTACT</h2>
             <div class="contact-grid">
-                <!-- contact info -->
+                <!-- contact info (left side) -->
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -681,30 +629,34 @@
                         <i class="fas fa-clock"></i>
                         <p>Open 24 Hours</p>
                     </div>
+                    
+                    <!-- Additional contact note -->
+                    <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                        <p style="font-style: italic; color: #ffb347;">
+                            <i class="fas fa-truck"></i> Emergency services available 24/7
+                        </p>
+                    </div>
                 </div>
                 
-                <!-- contact form - sends to rachelcorrea4@gmail.com via Formspree -->
-                <div class="contact-form">
-                    <form id="contactForm" action="https://formspree.io/f/mvgojvdl" method="POST">
-                        <!-- Formspree requires this redirect for thank you page -->
-                        <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
-                        <input type="hidden" name="_subject" value="New Plumbing Inquiry from Website">
-                        <input type="hidden" name="_replyto" value="email">
-                        
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" name="phone" placeholder="Phone" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Email address" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">CONTACT US</button>
-                    </form>
+                <!-- Google Map (right side) -->
+                <div class="map-container">
+                    <!-- Embedded Google Map for 77 Tama Street -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.3456789012345!2d174.8931965!3d-41.214301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38aab73fb45b37%3A0xbcbff78f2366cfc1!2s77%20Tama%20St%2C%20Alicetown%2C%20Lower%20Hutt%205010%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Hutt Valley Plumbing location map">
+                    </iframe>
+                    
+                    <!-- Directions button below map -->
+                    <div style="text-align: center; margin-top: 15px;">
+                        <a href="https://www.google.com/maps/dir//77+Tama+Street,+Alicetown,+Lower+Hutt+5010,+New+Zealand" 
+                           target="_blank" 
+                           class="get-directions-btn">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -754,65 +706,6 @@
                 }
             });
         });
-    </script>
-
-    <!-- Thank You Page (hidden by default, shown after form submission) -->
-    <div id="thankYouPage" style="display: none;">
-        <section class="thank-you-section">
-            <div class="thank-you-card">
-                <i class="fas fa-check-circle"></i>
-                <h2>Thank You!</h2>
-                <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
-                <a href="#" onclick="hideThankYou(); return false;" class="btn">Return to Home</a>
-            </div>
-        </section>
-    </div>
-
-    <script>
-        // Handle form submission and show thank you page
-        const form = document.getElementById('contactForm');
-        const mainContent = document.querySelector('.top-bar').parentNode;
-        const thankYouDiv = document.getElementById('thankYouPage');
-
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault(); // Prevent default form submission
-            
-            const formData = new FormData(form);
-            
-            try {
-                const response = await fetch(form.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-                
-                if (response.ok) {
-                    // Hide main content, show thank you page
-                    document.querySelectorAll('body > *:not(#thankYouPage)').forEach(el => {
-                        if (el.id !== 'thankYouPage') {
-                            el.style.display = 'none';
-                        }
-                    });
-                    thankYouDiv.style.display = 'block';
-                    window.scrollTo(0, 0);
-                } else {
-                    alert('Oops! Something went wrong. Please try again or call us directly.');
-                }
-            } catch (error) {
-                alert('Network error. Please check your connection and try again.');
-            }
-        });
-
-        // Function to hide thank you and show main content again
-        window.hideThankYou = function() {
-            document.querySelectorAll('body > *:not(#thankYouPage)').forEach(el => {
-                el.style.display = '';
-            });
-            thankYouDiv.style.display = 'none';
-            form.reset(); // Clear the form
-        };
     </script>
 </body>
 </html>
