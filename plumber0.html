@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hutt Valley Plumbing | Wellington Plumbers</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fbfbfb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* === HEADER / NAVIGATION === */
+        .top-bar {
+            background-color: #002b4a;
+            color: white;
+            padding: 8px 0;
+            font-size: 0.9rem;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .top-contact span {
+            margin-right: 20px;
+        }
+
+        .top-contact i {
+            margin-right: 5px;
+            color: #ffb347;
+        }
+
+        .top-social a {
+            color: white;
+            margin-left: 15px;
+            transition: opacity 0.2s;
+        }
+
+        .top-social a:hover {
+            opacity: 0.8;
+        }
+
+        nav {
+            background: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #002b4a;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: #e67e22;
+            font-size: 1rem;
+            font-weight: 400;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            font-weight: 500;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #1e3b4e;
+            transition: color 0.2s;
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            color: #e67e22;
+        }
+
+        .nav-links .active {
+            border-bottom: 3px solid #e67e22;
+            padding-bottom: 5px;
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            background: linear-gradient(135deg, #f0f6fc 0%, #ffffff 100%);
+            padding: 70px 0;
+            border-bottom: 1px solid #e0ecf5;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #002b4a;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #2c5779;
+            font-weight: 300;
+        }
+
+        /* === ABOUT SECTION === */
+        .about-section {
+            padding: 70px 0;
+            background: white;
+            scroll-margin-top: 100px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: #002b4a;
+            margin-bottom: 20px;
+            border-left: 7px solid #e67e22;
+            padding-left: 20px;
+        }
+
+        .about-text p {
+            font-size: 1.15rem;
+            color: #2a4055;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .about-features {
+            display: flex;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-item i {
+            font-size: 2rem;
+            color: #e67e22;
+        }
+
+        .about-image {
+            background: #eaf2f9;
+            border-radius: 30px;
+            padding: 30px;
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #d0e2f0;
+        }
+
+        .about-image i {
+            font-size: 8rem;
+            color: #3b6f9e;
+            opacity: 0.3;
+        }
+
+        /* === SERVICES SECTION === */
+        .services-section {
+            background: #f7fafd;
+            padding: 70px 0;
+            text-align: center;
+            scroll-margin-top: 100px;
+        }
+
+        .services-section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #002b4a;
+            margin-bottom: 20px;
+        }
+
+        .services-sub {
+            color: #2f6085;
+            font-size: 1.2rem;
+            margin-bottom: 50px;
+            font-weight: 300;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 30px;
+            padding: 40px 25px;
+            box-shadow: 0 10px 30px rgba(0,35,60,0.05);
+            transition: transform 0.2s;
+            border: 1px solid #deecf5;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .service-icon {
+            background: #eef3f9;
+            width: 90px;
+            height: 90px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+        }
+
+        .service-icon i {
+            font-size: 3rem;
+            color: #003459;
+        }
+
+        .service-card h3 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #002b4a;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #3d5f7a;
+            font-size: 1rem;
+        }
+
+        /* === TESTIMONIALS SECTION === */
+        .testimonials-section {
+            padding: 70px 0;
+            background: white;
+            scroll-margin-top: 100px;
+        }
+
+        .testimonials-section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #002b4a;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+
+        .testimonial-card {
+            background: #f7fbfe;
+            border-radius: 30px;
+            padding: 35px;
+            border-left: 8px solid #e67e22;
+            box-shadow: 0 5px 18px rgba(0,35,60,0.05);
+        }
+
+        .testimonial-card h4 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #003255;
+            margin-bottom: 5px;
+        }
+
+        .testimonial-card .role {
+            color: #d35400;
+            font-weight: 500;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #2f4b66;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .testimonial-card .stars {
+            color: #f9b93b;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+        }
+
+        /* === CONTACT SECTION === */
+        .contact-section {
+            background: #002b4a;
+            color: white;
+            padding: 70px 0;
+            scroll-margin-top: 100px;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-info {
+            background: rgba(255,255,255,0.05);
+            border-radius: 30px;
+            padding: 40px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-item i {
+            font-size: 2rem;
+            color: #f39c12;
+            width: 50px;
+        }
+
+        .info-item p {
+            font-size: 1.15rem;
+            line-height: 1.4;
+        }
+
+        .contact-form {
+            background: white;
+            border-radius: 30px;
+            padding: 40px;
+            color: #002b4a;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e2eef7;
+            border-radius: 60px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: 0.1s;
+        }
+
+        textarea {
+            border-radius: 30px;
+            resize: vertical;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #e67e22;
+        }
+
+        .btn {
+            background: #e67e22;
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            border-radius: 60px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: #c96917;
+        }
+
+        /* === THANK YOU PAGE STYLES === */
+        .thank-you-section {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #f0f6fc 0%, #ffffff 100%);
+        }
+
+        .thank-you-card {
+            background: white;
+            border-radius: 40px;
+            padding: 60px 40px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 20px 40px rgba(0,35,60,0.1);
+            border: 1px solid #e0ecf5;
+        }
+
+        .thank-you-card i {
+            font-size: 5rem;
+            color: #27ae60;
+            margin-bottom: 25px;
+        }
+
+        .thank-you-card h2 {
+            font-size: 2.5rem;
+            color: #002b4a;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-card p {
+            font-size: 1.2rem;
+            color: #2c5779;
+            margin-bottom: 30px;
+        }
+
+        .thank-you-card .btn {
+            display: inline-block;
+            width: auto;
+            padding: 16px 50px;
+            text-decoration: none;
+            background: #e67e22;
+            color: white;
+            border-radius: 60px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .thank-you-card .btn:hover {
+            background: #c96917;
+        }
+
+        /* === FOOTER === */
+        footer {
+            background: #001e32;
+            color: #b0cde0;
+            padding: 40px 0 20px;
+        }
+
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: #b0cde0;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #103e5c;
+            padding-top: 25px;
+            font-size: 0.95rem;
+        }
+
+        .copyright a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 800px) {
+            .about-grid, .contact-grid, .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+            .hero h1 { font-size: 2.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- top bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-contact">
+                <span><i class="fas fa-phone-alt"></i> +64 20 4032 0199</span>
+                <span><i class="fas fa-envelope"></i> huttvalleylplumming@gmail.com</span>
+                <span><i class="fas fa-clock"></i> Open 24 hours</span>
+            </div>
+            <div class="top-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <h2>Hutt Valley Plumbing</h2>
+                <span>Your Wellington specialists</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO / HOME SECTION -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Welcome to Hutt Valley Plumbing</h1>
+            <p>Your Wellington plumbing specialists for reliable and efficient services.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Hutt Valley Plumbing has been dedicated to providing top-quality plumbing services since its establishment in Lower Hutt, December 2021. Committed to reliability and efficiency, our experienced team addresses all plumbing needs, from leaky faucets to comprehensive overhauls, ensuring seamless operations for your home or business.</p>
+                <div class="about-features">
+                    <div class="feature-item"><i class="fas fa-check-circle"></i> <span>24/7 Emergency</span></div>
+                    <div class="feature-item"><i class="fas fa-check-circle"></i> <span>Licensed & insured</span></div>
+                </div>
+            </div>
+            <div class="about-image">
+                <i class="fas fa-wrench"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>SERVICES</h2>
+            <div class="services-sub">Style · Slogan</div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-home"></i></div>
+                    <h3>Residential Plumbing</h3>
+                    <p>Ensure your home's plumbing is functional and secure with our expert residential services.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Emergency Repairs</h3>
+                    <p>Available 24/7 to address all urgent plumbing situations with promptness and care.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>General Maintenance</h3>
+                    <p>From leaky faucets to pipe replacements, we handle it all efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>TESTIMONIALS</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <h4>Chandree Callaghan</h4>
+                    <div class="role">Satisfied homeowner</div>
+                    <p>Absolutely outstanding service from Hutt Valley Plumbers. Caleb came out straight away (even afterhours), arrived when he said he would, was friendly, respectful of my home and professional. He clearly explained the options, offered great solutions and completed the repair to a really high standard. The quality of the work was excellent and everything was left cleaned and tidy. I couldn't be happier and would highly recommend Caleb and his team to anyone needing a reliable, trustworthy, top quality plumber.</p>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+                <div class="testimonial-card">
+                    <h4>Amitkumar Patel</h4>
+                    <div class="role"></div>
+                    <p>Caleb from Hutt Valley Plumbing turned up very quickly and fixed our toilet leak efficiently. He left the place clean and tidy, which I really appreciated. I'm very happy with the service and will definitely consider him again for future jobs. Highly recommended!</p>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+                <div class="testimonial-card">
+                    <h4>Daniel Levavasa</h4>
+                    <div class="role"></div>
+                    <p>Did a quick search for plumbers in the area. Caleb answered first time, came over the next day (could have came same day if I wanted) fixed the leak super quick. Great comms! Highly recommend Caleb and Hutt Valley Plumbing for all your plumbing needs. Will be the first person I call if I need a plumber from now on!</p>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+                <div class="testimonial-card">
+                    <h4>Tracy</h4>
+                    <div class="role">Local Guide</div>
+                    <p>I thoroughly recommend Hutt Valley Plumbing and will be using this company for all future plumbing needs. Caleb was fantastic to deal with. He was quick to respond and come for an onsite visit to assess our problem (lack of hot water) on a Friday afternoon, checked the needed parts were available, then came back the next morning (Saturday) at a time that suited us to fix the problem. He was super-efficient, thorough, knowledgeable and explained everything very clearly. Really appreciated his engaging, friendly manner. Fantastic service.</p>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION with Formspree integration -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>CONTACT</h2>
+            <div class="contact-grid">
+                <!-- contact info -->
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>77 Tama Street, Alicetown,<br>Lower Hutt 5010, New Zealand</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+64 20 4032 0199</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>huttvalleylplumming@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Open 24 Hours</p>
+                    </div>
+                </div>
+                
+                <!-- contact form - sends to rachelcorrea4@gmail.com via Formspree -->
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/mvgojvdl" method="POST">
+                        <!-- Formspree requires this redirect for thank you page -->
+                        <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
+                        <input type="hidden" name="_subject" value="New Plumbing Inquiry from Website">
+                        <input type="hidden" name="_replyto" value="email">
+                        
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">CONTACT US</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="logo" style="color:white;">
+                    <h2 style="color:white;">Hutt Valley Plumbing</h2>
+                    <span style="color:#b0cde0;">Your Wellington specialists</span>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#testimonials">TESTIMONIALS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                Copyright 2026 All rights reserved <br>
+                Powered By <a href="#">SITE123</a> - Create your own website
+            </div>
+        </div>
+    </footer>
+
+    <!-- Active nav link highlighting on scroll -->
+    <script>
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <!-- Thank You Page (hidden by default, shown after form submission) -->
+    <div id="thankYouPage" style="display: none;">
+        <section class="thank-you-section">
+            <div class="thank-you-card">
+                <i class="fas fa-check-circle"></i>
+                <h2>Thank You!</h2>
+                <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                <a href="#" onclick="hideThankYou(); return false;" class="btn">Return to Home</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Handle form submission and show thank you page
+        const form = document.getElementById('contactForm');
+        const mainContent = document.querySelector('.top-bar').parentNode;
+        const thankYouDiv = document.getElementById('thankYouPage');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent default form submission
+            
+            const formData = new FormData(form);
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    // Hide main content, show thank you page
+                    document.querySelectorAll('body > *:not(#thankYouPage)').forEach(el => {
+                        if (el.id !== 'thankYouPage') {
+                            el.style.display = 'none';
+                        }
+                    });
+                    thankYouDiv.style.display = 'block';
+                    window.scrollTo(0, 0);
+                } else {
+                    alert('Oops! Something went wrong. Please try again or call us directly.');
+                }
+            } catch (error) {
+                alert('Network error. Please check your connection and try again.');
+            }
+        });
+
+        // Function to hide thank you and show main content again
+        window.hideThankYou = function() {
+            document.querySelectorAll('body > *:not(#thankYouPage)').forEach(el => {
+                el.style.display = '';
+            });
+            thankYouDiv.style.display = 'none';
+            form.reset(); // Clear the form
+        };
+    </script>
+</body>
+</html>
