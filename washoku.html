@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Sauce Shop - Wireframes</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Noto+Serif+JP:wght@400;600;700&family=Shippori+Mincho:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .wireframe-1 { font-family: 'Zen Maru Gothic', sans-serif; }
+    .wireframe-2 { font-family: 'Noto Serif JP', serif; }
+    .wireframe-3 { font-family: 'Shippori Mincho', serif; }
+    .scroll-smooth { scroll-behavior: smooth; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+ </head>
+ <body class="h-full bg-amber-50 overflow-auto" style="background-color: #FFF9ED;">
+  <!-- Navigation Tabs -->
+  <div class="sticky top-0 z-50 bg-stone-900 shadow-lg">
+   <div class="max-w-7xl mx-auto px-4">
+    <div class="flex justify-center gap-2 py-3">
+     <button onclick="showWireframe(1)" id="tab1" class="px-6 py-2 rounded-full text-sm font-medium transition-all bg-amber-500 text-stone-900"> Concept 1: Warm &amp; Cozy </button>
+     <button onclick="showWireframe(2)" id="tab2" class="px-6 py-2 rounded-full text-sm font-medium transition-all bg-stone-700 text-stone-300 hover:bg-stone-600"> Concept 2: Elegant Traditional </button>
+     <button onclick="showWireframe(3)" id="tab3" class="px-6 py-2 rounded-full text-sm font-medium transition-all bg-stone-700 text-stone-300 hover:bg-stone-600"> Concept 3: Modern Minimalist </button>
+     <button onclick="showWireframe(4)" id="tab4" class="px-6 py-2 rounded-full text-sm font-medium transition-all bg-stone-700 text-stone-300 hover:bg-stone-600"> Aesthetic Guide </button>
+    </div>
+   </div>
+  </div>
+
+  <!-- ==================== WIREFRAME 1: WARM & COZY ==================== -->
+  <div id="wireframe1" class="wireframe-1">
+   <section class="relative overflow-hidden" style="background: linear-gradient(to bottom, #FFF9ED, #FFF5E6);">
+    <div class="absolute inset-0 pointer-events-none">
+      <img src="/family.png" alt="family background" class="w-full h-full object-cover object-center" style="opacity:0.4;">
+    </div>
+    <div class="absolute inset-0 opacity-10">
+     <svg viewbox="0 0 400 400" class="w-full h-full">
+      <pattern id="pattern1" x="0" y="0" width="80" height="80" patternunits="userSpaceOnUse">
+       <circle cx="40" cy="40" r="2" fill="#88967A" />
+       <path d="M20 20 Q40 0 60 20 Q80 40 60 60 Q40 80 20 60 Q0 40 20 20" stroke="#88967A" fill="none" stroke-width="0.5" />
+      </pattern>
+      <rect width="100%" height="100%" fill="url(#pattern1)" />
+     </svg>
+    </div>
+    <nav class="relative z-10 flex items-center justify-between px-8 py-4 max-w-7xl mx-auto">
+     <div class="flex items-center gap-3">
+      <div class="w-22 h-20"><img src="/washoku.png" alt="Washoku Logo"></div>
+     </div>
+     <div class="flex gap-8 transition-colors" style="color: #3A3532; font-size: x-large;">
+      <a href="#sauces1" style="color: #3A3532;">Our Sauces</a>
+      <a href="#recipes1" style="color: #3A3532;">Recipes</a>
+      <a href="#cart1" class="flex items-center gap-1" style="color: #3A3532;">
+       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+       Cart (0)
+      </a>
+     </div>
+    </nav>
+    <div class="relative z-10 max-w-7xl mx-auto px-8 py-20 flex items-center gap-12">
+     <div class="flex-1">
+      <p class="text-lg mb-2" style="color: #88967A;">家庭の味 • Family Flavors</p>
+      <h1 class="text-5xl font-bold leading-tight mb-6" style="color: #3A3532;">Authentic Japanese Sauces<br><span style="color: #E12B2E;">Made with Love</span></h1>
+      <p class="text-lg mb-8 max-w-lg" style="color: #3A3532;">Passed down through three generations, our family recipes bring the warmth of a Japanese home kitchen to your table.</p>
+      <button class="text-white px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg hover:shadow-xl" style="background-color: #E12B2E;" onmouseover="this.style.backgroundColor='#C01F1F'" onmouseout="this.style.backgroundColor='#E12B2E'">Discover Our Story →</button>
+     </div>
+     <div class="flex-1 flex justify-center">
+      <div class="relative">
+       <div class="w-72 h-72 rounded-full flex items-center justify-center shadow-2xl" style="background: linear-gradient(135deg, #F4C542, #F0B82A);">
+        <div class="text-center"><div class="text-6xl mb-2">🍶</div><p class="font-medium" style="color: #3A3532;">Traditional<br>Brewing</p></div>
+       </div>
+       <div class="absolute -bottom-4 -right-4 w-24 h-24 rounded-full flex items-center justify-center border-4" style="border-color: #FFF9ED; background-color: #E12B2E; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+        <span class="font-bold text-sm text-center text-white">Since<br>1952</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <section id="sauces1" style="background-color: #FFF9ED;" class="py-20">
+    <div class="max-w-7xl mx-auto px-8">
+     <div class="text-center mb-16">
+      <p class="mb-2" style="color: #88967A;">三つの味 • Three Flavors</p>
+      <h2 class="text-4xl font-bold" style="color: #3A3532;">Our Signature Sauces</h2>
+     </div>
+     <div class="grid grid-cols-3 gap-8">
+      <div class="rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all group" style="background: linear-gradient(to bottom, #FFF9ED, white);">
+       <div class="w-full h-48 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform" style="background: linear-gradient(135deg, #F4C542, #F0B82A);">
+        <div class="text-center"><div class="text-5xl mb-2">🥢</div><div class="w-16 h-24 rounded-lg mx-auto shadow-lg" style="background-color: #E12B2E;"></div></div>
+       </div>
+       <span class="inline-block px-3 py-1 rounded-full text-sm mb-3" style="background-color: #88967A; color: #FFF9ED;">Best Seller</span>
+       <h3 class="text-2xl font-bold mb-2" style="color: #3A3532;">Teriyaki Glaze</h3>
+       <p class="mb-4" style="color: #88967A;">Sweet, savory, and perfectly balanced. Our signature family recipe.</p>
+       <div class="flex items-center justify-between">
+        <span class="text-2xl font-bold" style="color: #3A3532;">$price </span>
+        <button class="text-white px-6 py-2 rounded-full transition-colors" style="background-color: #E12B2E;" onmouseover="this.style.backgroundColor='#C01F1F'" onmouseout="this.style.backgroundColor='#E12B2E'">Add to Cart</button>
+       </div>
+      </div>
+      <div class="bg-gradient-to-b from-red-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all group">
+       <div class="w-full h-48 bg-gradient-to-br from-red-100 to-red-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+        <div class="text-center"><div class="text-5xl mb-2">🌶️</div><div class="w-16 h-24 bg-red-700 rounded-lg mx-auto shadow-lg"></div></div>
+       </div>
+       <span class="inline-block px-3 py-1 rounded-full text-sm mb-3" style="background-color: #E12B2E; color: #FFF9ED;">Spicy</span>
+       <h3 class="text-2xl font-bold mb-2" style="color: #3A3532;">Spicy Miso</h3>
+       <p class="mb-4" style="color: #3A3532;">Rich umami with a kick. Perfect for ramen and stir-fry.</p>
+       <div class="flex items-center justify-between">
+        <span class="text-2xl font-bold" style="color: #3A3532;">$price</span>
+        <button class="text-white px-6 py-2 rounded-full transition-colors" style="background-color: #E12B2E;" onmouseover="this.style.backgroundColor='#C01F1F'" onmouseout="this.style.backgroundColor='#E12B2E'">Add to Cart</button>
+       </div>
+      </div>
+      <div class="bg-gradient-to-b from-stone-50 to-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all group">
+       <div class="w-full h-48 bg-gradient-to-br from-stone-100 to-stone-200 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-105 transition-transform">
+        <div class="text-center"><div class="text-5xl mb-2">🍜</div><div class="w-16 h-24 bg-stone-700 rounded-lg mx-auto shadow-lg"></div></div>
+       </div>
+       <span class="inline-block px-3 py-1 rounded-full text-sm mb-3" style="background-color: #88967A; color: #FFF9ED;">Classic</span>
+       <h3 class="text-2xl font-bold mb-2" style="color: #3A3532;">Ponzu Citrus</h3>
+       <p class="mb-4" style="color: #3A3532;">Bright and tangy. Ideal for dipping and dressings.</p>
+       <div class="flex items-center justify-between">
+        <span class="text-2xl font-bold" style="color: #3A3532;">$price</span>
+        <button class="text-white px-6 py-2 rounded-full transition-colors" style="background-color: #E12B2E;" onmouseover="this.style.backgroundColor='#C01F1F'" onmouseout="this.style.backgroundColor='#E12B2E'">Add to Cart</button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-8">
+     <div class="text-center mb-12">
+      <p class="mb-2" style="color: #88967A;">お料理の様子 • See It In Action</p>
+      <h2 class="text-4xl font-bold" style="color: #3A3532;">Watch Our Sauce Come to Life</h2>
+     </div>
+     <div class="rounded-3xl overflow-hidden shadow-2xl" style="background: linear-gradient(135deg, #F4C542, #F0B82A);">
+      <div class="aspect-video bg-gradient-to-br from-stone-300 to-stone-400 flex items-center justify-center relative">
+       <div class="text-center"><div class="text-7xl mb-4">🎬</div><p class="text-stone-700 text-lg font-medium">Video placeholder</p><p class="text-stone-600 text-sm mt-2">Replace with your cooking video</p></div>
+       <div class="absolute bottom-6 left-6 bg-white rounded-full px-4 py-2 shadow-lg flex items-center gap-2"><span class="text-2xl">▶️</span><span class="font-medium" style="color: #3A3532;">See the magic</span></div>
+      </div>
+     </div>
+     <div class="mt-12 text-center">
+      <p class="text-lg mb-4" style="color: #3A3532;">Watch how our Teriyaki Glaze transforms simple ingredients into a restaurant-quality dish in just minutes.</p>
+      <button class="text-white px-8 py-4 rounded-full text-lg font-medium transition-all shadow-lg hover:shadow-xl" style="background-color: #E12B2E;" onmouseover="this.style.backgroundColor='#C01F1F'" onmouseout="this.style.backgroundColor='#E12B2E'">▶ Watch Full Tutorial</button>
+     </div>
+    </div>
+   </section>
+
+   <section id="recipes1" class="bg-gradient-to-b from-orange-50 to-amber-50 py-20">
+    <div class="max-w-7xl mx-auto px-8">
+     <div class="text-center mb-16">
+      <p class="text-amber-600 mb-2">お料理レシピ • Cooking Recipes</p>
+      <h2 class="text-4xl font-bold text-amber-900">Cook Like Okaasan</h2>
+      <p class="text-amber-700 mt-4 max-w-2xl mx-auto">Learn to make authentic Japanese dishes with our sauces. Each recipe is tested in our family kitchen.</p>
+     </div>
+     <div class="grid grid-cols-2 gap-8">
+      <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all flex">
+       <div class="w-48 bg-gradient-to-br from-amber-200 to-orange-200 flex items-center justify-center"><span class="text-6xl">🍗</span></div>
+       <div class="flex-1 p-6">
+        <span class="inline-block bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs mb-2">Uses: Teriyaki Glaze</span>
+        <h3 class="text-xl font-bold text-amber-900 mb-2">Chicken Teriyaki</h3>
+        <p class="text-amber-700 text-sm mb-4">Classic home-style teriyaki with tender chicken and glossy sauce.</p>
+        <div class="flex items-center gap-4 text-sm text-amber-600"><span>⏱️ 25 min</span><span>👨‍👩‍👧 4 servings</span><span>⭐ Easy</span></div>
+        <button class="mt-4 text-amber-700 font-medium hover:text-amber-900 transition-colors">View Recipe →</button>
+       </div>
+      </div>
+      <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all flex">
+       <div class="w-48 bg-gradient-to-br from-red-200 to-orange-200 flex items-center justify-center"><span class="text-6xl">🍜</span></div>
+       <div class="flex-1 p-6">
+        <span class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs mb-2">Uses: Spicy Miso</span>
+        <h3 class="text-xl font-bold text-amber-900 mb-2">Spicy Miso Ramen</h3>
+        <p class="text-amber-700 text-sm mb-4">Rich and warming ramen with our signature spicy miso base.</p>
+        <div class="flex items-center gap-4 text-sm text-amber-600"><span>⏱️ 40 min</span><span>👨‍👩‍👧 2 servings</span><span>⭐ Medium</span></div>
+        <button class="mt-4 text-amber-700 font-medium hover:text-amber-900 transition-colors">View Recipe →</button>
+       </div>
+      </div>
+      <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all flex">
+       <div class="w-48 bg-gradient-to-br from-stone-200 to-amber-200 flex items-center justify-center"><span class="text-6xl">🥗</span></div>
+       <div class="flex-1 p-6">
+        <span class="inline-block bg-stone-100 text-stone-700 px-3 py-1 rounded-full text-xs mb-2">Uses: Ponzu Citrus</span>
+        <h3 class="text-xl font-bold text-amber-900 mb-2">Ponzu Salad</h3>
+        <p class="text-amber-700 text-sm mb-4">Fresh and light salad with citrus ponzu dressing.</p>
+        <div class="flex items-center gap-4 text-sm text-amber-600"><span>⏱️ 10 min</span><span>👨‍👩‍👧 4 servings</span><span>⭐ Easy</span></div>
+        <button class="mt-4 text-amber-700 font-medium hover:text-amber-900 transition-colors">View Recipe →</button>
+       </div>
+      </div>
+      <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all flex">
+       <div class="w-48 bg-gradient-to-br from-amber-200 to-red-200 flex items-center justify-center"><span class="text-6xl">🍖</span></div>
+       <div class="flex-1 p-6">
+        <span class="inline-block bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-xs mb-2">Uses: Teriyaki Glaze</span>
+        <h3 class="text-xl font-bold text-amber-900 mb-2">Glazed Salmon</h3>
+        <p class="text-amber-700 text-sm mb-4">Perfectly glazed salmon with caramelized teriyaki finish.</p>
+        <div class="flex items-center gap-4 text-sm text-amber-600"><span>⏱️ 20 min</span><span>👨‍👩‍👧 2 servings</span><span>⭐ Easy</span></div>
+        <button class="mt-4 text-amber-700 font-medium hover:text-amber-900 transition-colors">View Recipe →</button>
+       </div>
+      </div>
+     </div>
+     <div class="text-center mt-12">
+      <button class="bg-amber-700 hover:bg-amber-800 text-white px-8 py-4 rounded-full font-medium transition-all shadow-lg">View All Recipes →</button>
+     </div>
+    </div>
+   </section>
+
+   <section id="cart1" class="bg-white py-20">
+    <div class="max-w-4xl mx-auto px-8">
+     <div class="text-center mb-12">
+      <p class="text-amber-600 mb-2">お買い物 • Shopping Cart</p>
+      <h2 class="text-4xl font-bold text-amber-900">Your Order</h2>
+     </div>
+     <div class="bg-amber-50 rounded-3xl p-8 shadow-lg">
+      <div class="space-y-6 mb-8">
+       <div class="flex items-center gap-6 bg-white rounded-2xl p-4">
+        <div class="w-20 h-20 bg-gradient-to-br from-amber-100 to-amber-200 rounded-xl flex items-center justify-center"><span class="text-3xl">🍶</span></div>
+        <div class="flex-1"><h4 class="font-bold text-amber-900">Teriyaki Glaze</h4><p class="text-amber-600 text-sm">250ml bottle</p></div>
+        <div class="flex items-center gap-3">
+         <button class="w-8 h-8 bg-amber-100 rounded-full text-amber-700 font-bold hover:bg-amber-200 transition-colors">-</button>
+         <span class="w-8 text-center font-bold text-amber-900">2</span>
+         <button class="w-8 h-8 bg-amber-100 rounded-full text-amber-700 font-bold hover:bg-amber-200 transition-colors">+</button>
+        </div>
+        <span class="font-bold text-amber-900 text-lg">$Price</span>
+       </div>
+       <div class="flex items-center gap-6 bg-white rounded-2xl p-4">
+        <div class="w-20 h-20 bg-gradient-to-br from-red-100 to-red-200 rounded-xl flex items-center justify-center"><span class="text-3xl">🌶️</span></div>
+        <div class="flex-1"><h4 class="font-bold text-amber-900">Spicy Miso</h4><p class="text-amber-600 text-sm">250ml bottle</p></div>
+        <div class="flex items-center gap-3">
+         <button class="w-8 h-8 bg-amber-100 rounded-full text-amber-700 font-bold hover:bg-amber-200 transition-colors">-</button>
+         <span class="w-8 text-center font-bold text-amber-900">1</span>
+         <button class="w-8 h-8 bg-amber-100 rounded-full text-amber-700 font-bold hover:bg-amber-200 transition-colors">+</button>
+        </div>
+        <span class="font-bold text-amber-900 text-lg">$price</span>
+       </div>
+      </div>
+      <div class="border-t-2 border-amber-200 pt-6">
+       <div class="flex justify-between mb-2"><span class="text-amber-700">Subtotal</span><span class="text-amber-900">$Price</span></div>
+       <div class="flex justify-between mb-2"><span class="text-amber-700">Shipping</span><span class="text-amber-900">$price</span></div>
+       <div class="flex justify-between text-xl font-bold mt-4 pt-4 border-t border-amber-200"><span class="text-amber-900">Total</span><span class="text-amber-900">$price</span></div>
+      </div>
+      <button class="w-full mt-8 bg-amber-700 hover:bg-amber-800 text-white py-4 rounded-full text-lg font-bold transition-all shadow-lg hover:shadow-xl">Proceed to Checkout →</button>
+      <p class="text-center text-amber-600 text-sm mt-4">🔒 Secure payment • Free shipping over $Price</p>
+     </div>
+    </div>
+   </section>
+
+   <section class="bg-gradient-to-b from-amber-100 to-orange-100 py-20">
+    <div class="max-w-4xl mx-auto px-8">
+     <div class="text-center mb-12">
+      <p class="text-amber-600 mb-2">ご意見 • Your Feedback</p>
+      <h2 class="text-4xl font-bold text-amber-900">We'd Love to Hear From You</h2>
+      <p class="text-amber-700 mt-4">Your feedback helps us improve our family recipes.</p>
+     </div>
+     <div class="bg-white rounded-3xl p-8 shadow-lg">
+      <form class="space-y-6" onsubmit="event.preventDefault(); showFeedbackSuccess(1);">
+       <div class="grid grid-cols-2 gap-6">
+        <div><label class="block text-amber-800 font-medium mb-2">Your Name</label><input type="text" class="w-full px-4 py-3 rounded-xl border-2 border-amber-200 focus:border-amber-500 focus:outline-none transition-colors" placeholder="Tanaka-san"></div>
+        <div><label class="block text-amber-800 font-medium mb-2">Email</label><input type="email" class="w-full px-4 py-3 rounded-xl border-2 border-amber-200 focus:border-amber-500 focus:outline-none transition-colors" placeholder="tanaka@example.com"></div>
+       </div>
+       <div>
+        <label class="block text-amber-800 font-medium mb-2">How was your experience?</label>
+        <div class="flex gap-2">
+         <button type="button" class="text-3xl hover:scale-125 transition-transform">😍</button>
+         <button type="button" class="text-3xl hover:scale-125 transition-transform">😊</button>
+         <button type="button" class="text-3xl hover:scale-125 transition-transform">😐</button>
+         <button type="button" class="text-3xl hover:scale-125 transition-transform">😕</button>
+         <button type="button" class="text-3xl hover:scale-125 transition-transform">😢</button>
+        </div>
+       </div>
+       <div><label class="block text-amber-800 font-medium mb-2">Your Message</label><textarea class="w-full px-4 py-3 rounded-xl border-2 border-amber-200 focus:border-amber-500 focus:outline-none transition-colors h-32 resize-none" placeholder="Tell us what you think..."></textarea></div>
+       <button type="submit" class="w-full bg-amber-700 hover:bg-amber-800 text-white py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-xl">Send Feedback 💌</button>
+      </form>
+      <div id="feedback-success-1" class="hidden text-center py-8">
+       <div class="text-5xl mb-4">🎉</div>
+       <h3 class="text-2xl font-bold text-amber-900 mb-2">Thank You!</h3>
+       <p class="text-amber-700">Your feedback means the world to our family.</p>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <footer class="bg-amber-900 text-amber-100 py-12">
+    <div class="max-w-7xl mx-auto px-8">
+     <div class="flex items-center justify-between">
+      <div class="flex items-center gap-3">
+       <div class="w-10 h-10 rounded-full overflow-hidden"><img src="/washoku.png" alt="Washoku Logo">_FOOTER</div>
+       <span class="text-xl font-bold">WASHUKO</span>
+      </div>
+      <p class="text-amber-300">© 2024 Made with ❤️ in Tokyo</p>
+     </div>
+    </div>
+   </footer>
+  </div>
+
+  <!-- ==================== WIREFRAME 2: ELEGANT TRADITIONAL ==================== -->
+<div id="wireframe2" class="wireframe-2 hidden">
+  <style>
+    /* Washoku Brand Palette */
+    .washoku-bg { background-color:#FFF4E6; }
+    .washoku-soft { background-color:#F7F2EA; }
+
+    .washoku-red { color:#E12B2E; }
+    .washoku-gold { color:#E9B45A; }
+    .washoku-dark { color:#2B2B2B; }
+
+    .border-washoku { border-color:#E9B45A; }
+
+    .btn-primary{
+      background:#E12B2E;
+      color:white;
+    }
+
+    .btn-primary:hover{
+      background:#c51f22;
+    }
+
+    .btn-outline{
+      border:2px solid #E12B2E;
+      color:#E12B2E;
+      background:transparent;
+    }
+
+    .btn-outline:hover{
+      background:#E12B2E;
+      color:white;
+    }
+  </style>
+
+  <section class="relative min-h-screen washoku-bg">
+    <div class="absolute inset-0 pointer-events-none">
+      <img src="/family.png" alt="family background" class="w-full h-full object-cover object-center" style="opacity:0.4;">
+    </div>
+
+    <nav class="relative z-10 flex flex-wrap items-center justify-between px-4 sm:px-8 py-4 sm:py-6 max-w-7xl mx-auto">
+      <div class="flex items-center gap-3">
+        <div class="w-30 h-20 sm:w-30 sm:h-20">
+          <img src="/washoku.png" alt="Washoku Logo">
+        </div>
+      </div>
+
+      <div class="flex gap-6 sm:gap-10 text-sm tracking-wider font-medium washoku-dark">
+        <a href="#sauces2" class="hover:text-[#E12B2E]">COLLECTION</a>
+        <a href="#recipes2" class="hover:text-[#E12B2E]">RECIPES</a>
+        <a href="#cart2" class="hover:text-[#E12B2E]">CART</a>
+      </div>
+    </nav>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 py-12 sm:py-20 text-center">
+      <p class="tracking-[0.3em] text-sm mb-4 washoku-gold">純粋 · 洗練</p>
+
+      <h1 class="text-4xl sm:text-6xl font-light leading-tight mb-6 washoku-dark">
+        The essence of<br>
+        <span class="washoku-red">Japanese simplicity</span>
+      </h1>
+
+      <p class="text-base sm:text-lg max-w-2xl mx-auto mb-10 washoku-dark">
+        Traditional techniques, modern elegance. Crafted with purity and intention.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="btn-outline px-8 py-3 text-sm tracking-widest">
+          DISCOVER
+        </button>
+
+        <button class="btn-primary px-8 py-3 text-sm tracking-widest">
+          SHOP NOW
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20" style="background-color: #F8F5F0;">   <!-- soft stone background -->
+  <div class="max-w-7xl mx-auto px-8">
+    <!-- refined heading with gold accent and thin divider -->
+    <div class="text-center mb-16">
+      <p class="text-sm tracking-[0.3em] mb-3" style="color: #B2916D;">お料理の様子 · CULINARY SCENE</p>
+      <h2 class="text-4xl md:text-5xl font-light leading-tight" style="color: #2E3B4E;">Watch the <span style="color: #E12B2E;">Craft</span></h2>
+      <div class="w-20 h-0.5 mx-auto mt-6" style="background-color: #B2916D;"></div>
+    </div>
+
+    <!-- video card – clean, elevated, with minimal border and refined shadow -->
+    <div class="rounded-2xl overflow-hidden shadow-xl bg-white border border-[#D6CFC4]">
+      <!-- video placeholder with subtle washi‑texture overlay -->
+      <div class="aspect-video relative flex items-center justify-center" style="background: #EAE5DB; background-image: radial-gradient(circle at 30% 40%, rgba(178,145,109,0.08) 0%, transparent 30%);">
+        <!-- play button – simple gold circle with icon -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="w-20 h-20 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center shadow-lg border border-white/60 transition-transform hover:scale-110 cursor-pointer" style="color: #2E3B4E;">
+            <span class="text-3xl pl-1">▶</span>
+          </div>
+        </div>
+        <!-- minimal caption at bottom left (elegant) -->
+        <div class="absolute bottom-6 left-6 text-xs tracking-wider px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-[#D6CFC4]" style="color: #2E3B4E;">
+          ⏺ behind the scenes
+        </div>
+        <!-- tiny Japanese character (subtle) -->
+        <div class="absolute top-6 right-6 text-7xl opacity-10 select-none" style="color: #2E3B4E;">味</div>
+      </div>
+
+      <!-- description area – minimal, clean typography -->
+      <div class="px-8 py-10 text-center md:text-left md:flex md:items-center md:justify-between gap-8" style="background-color: white;">
+        <div>
+          <h3 class="text-2xl font-light mb-2" style="color: #2E3B4E;">Teriyaki in motion</h3>
+          <p class="max-w-xl text-sm leading-relaxed" style="color: #6A7B6E;">
+            Watch our master brewer gently simmer the glaze — the aroma of mirin and soy fills the kitchen. 
+            A two‑minute window into generations of knowledge.
+          </p>
+        </div>
+        <button class="mt-6 md:mt-0 px-8 py-3 text-sm tracking-widest transition-all border-2 hover:bg-[#2E3B4E] hover:text-white" 
+                style="border-color: #2E3B4E; color: #2E3B4E; background: transparent;">
+          WATCH FULL STORY →
+        </button>
+      </div>
+    </div>
+
+    <!-- subtle extra note – could be a small testimonial or detail (optional) -->
+    <div class="text-center mt-12 text-xs tracking-wider" style="color: #B2916D;">
+      <span class="px-6 py-2 border border-[#D6CFC4] rounded-full inline-flex items-center gap-2 bg-white/50">
+        🎋 醸す · 伝える · 味わう
+      </span>
+    </div>
+  </div>
+</section>
+
+  <!-- Collection -->
+  <section id="sauces2" class="py-20 px-4 bg-white">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-16">
+        <p class="tracking-[0.5em] text-sm washoku-gold">THE COLLECTION</p>
+        <h2 class="text-3xl sm:text-4xl font-light mt-2 washoku-dark">Timeless flavors</h2>
+        <div class="w-16 h-0.5 mx-auto mt-4 bg-[#E9B45A]"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- product 1 -->
+        <div class="group text-center">
+          <div class="aspect-square w-full max-w-xs mx-auto mb-6 relative bg-[#F7F2EA]">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-20 h-32 bg-[#E12B2E] rounded-md shadow-lg"></div>
+            </div>
+          </div>
+
+          <p class="text-xs tracking-widest mb-1 washoku-red">SIGNATURE</p>
+          <h3 class="text-xl font-medium mb-2 washoku-dark">Teriyaki · Koji aged</h3>
+          <p class="text-sm px-4 mb-4 text-gray-600">Mellow sweetness, cedar hint</p>
+
+          <div class="flex items-center justify-between max-w-[200px] mx-auto pt-3 border-t border-gray-200">
+            <span class="text-xl washoku-dark">$price</span>
+            <button class="text-sm washoku-red">ADD →</button>
+          </div>
+        </div>
+
+        <!-- product 2 -->
+        <div class="group text-center">
+          <div class="aspect-square w-full max-w-xs mx-auto mb-6 relative bg-[#F7F2EA]">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-20 h-32 bg-[#E9B45A] rounded-md shadow-lg"></div>
+            </div>
+          </div>
+
+          <p class="text-xs tracking-widest mb-1 washoku-red">BOLD</p>
+          <h3 class="text-xl font-medium mb-2 washoku-dark">Miso · fermented barley</h3>
+          <p class="text-sm px-4 mb-4 text-gray-600">Deep umami, lingering warmth</p>
+
+          <div class="flex items-center justify-between max-w-[200px] mx-auto pt-3 border-t border-gray-200">
+            <span class="text-xl washoku-dark">$price</span>
+            <button class="text-sm washoku-red">ADD →</button>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div class="group text-center">
+          <div class="aspect-square w-full max-w-xs mx-auto mb-6 relative bg-[#F7F2EA]">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-20 h-32 bg-[#7A4E2D] rounded-md shadow-lg"></div>
+            </div>
+          </div>
+
+          <p class="text-xs tracking-widest mb-1 washoku-red">BRIGHT</p>
+          <h3 class="text-xl font-medium mb-2 washoku-dark">Yuzu Ponzu · junmai</h3>
+          <p class="text-sm px-4 mb-4 text-gray-600">Citrus, dashi, pristine balance</p>
+
+          <div class="flex items-center justify-between max-w-[200px] mx-auto pt-3 border-t border-gray-200">
+            <span class="text-xl washoku-dark">$price</span>
+            <button class="text-sm washoku-red">ADD →</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Recipes -->
+  <section id="recipes2" class="py-20 px-4 washoku-soft">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl sm:text-4xl font-light mb-3 washoku-dark">Recipes</h2>
+      <div class="w-16 h-0.5 mx-auto mb-10 bg-[#E9B45A]"></div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+        <div class="bg-white p-6 shadow-sm">
+          <span class="text-xs tracking-widest washoku-gold">TERIYAKI</span>
+          <h4 class="text-xl font-medium mt-1 washoku-dark">Glazed black cod</h4>
+          <p class="text-sm text-gray-600 mt-2">45min · serves 2</p>
+        </div>
+
+        <div class="bg-white p-6 shadow-sm">
+          <span class="text-xs tracking-widest washoku-gold">MISO</span>
+          <h4 class="text-xl font-medium mt-1 washoku-dark">Tantanmen ramen</h4>
+          <p class="text-sm text-gray-600 mt-2">60min · serves 4</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<!-- Cart Section -->
+ <section id="cart2" class="py-20 px-4" style="background:#FFF4E6;">
+    <div class="max-w-3xl mx-auto border rounded-lg p-8 shadow-sm" style="border-color:#E9B45A; background:#ffffff;">
+
+        <p class="tracking-widest text-sm mb-4 text-center" style="color:#E9B45A;">
+        YOUR SELECTION
+        </p>
+
+        <div class="flex justify-between border-b pb-4 mb-4 text-[#2B2B2B]" style="border-color:#E9B45A;">
+        <span>Teriyaki (1)</span>
+        <span>$price</span>
+        </div>
+
+        <div class="flex justify-between border-b pb-4 mb-4 text-[#2B2B2B]" style="border-color:#E9B45A;">
+        <span>Yuzu Ponzu (2)</span>
+        <span>$price</span>
+        </div>
+
+        <div class="flex justify-between font-semibold text-lg text-[#2B2B2B] mt-6">
+        <span>Total</span>
+        <span>$total Price</span>
+        </div>
+
+        <button class="w-full mt-8 py-4 text-white tracking-widest rounded-md transition"
+        style="background:#E12B2E;">
+        CHECKOUT
+        </button>
+
+    </div>
+    </section>
+
+
+    <!-- Feedback Section -->
+    <section class="py-20 px-4" style="background:#E9B45A;">
+    <div class="max-w-xl mx-auto text-center text-white">
+
+        <p class="tracking-widest text-sm opacity-80">ご意見</p>
+
+        <h3 class="text-3xl font-light mt-2">
+        We value your thoughts
+        </h3>
+        <p class="text-sm opacity-80 mt-2">
+        Your feedback helps us improve the Washoku experience.
+        </p>
+        <form onsubmit="event.preventDefault(); showFeedbackSuccess(2);" class="mt-10 space-y-6">
+        <input 
+            type="text" 
+            placeholder="Your Name"
+            class="w-full p-3 rounded-md text-[#2B2B2B]"
+        >
+        <textarea 
+            placeholder="Your message"
+            class="w-full p-3 rounded-md text-[#2B2B2B] h-28">
+        </textarea>
+
+        <button 
+            class="px-10 py-3 text-sm tracking-widest rounded-md transition"
+            style="background:transparent; border-color:#2B2B2B ; color:#2B2B2B;">
+            SEND MESSAGE
+        </button>
+        </form>
+        <div id="feedback-success-2" class="hidden mt-6 text-white font-light">
+        ✨ Thank you for your feedback!
+        </div>
+    </div>
+    </section>
+    <footer class="py-6 text-center text-sm" style="background:#FFF4E6; color:#2B2B2B;">
+    © 2024 Washoku · 和の食卓
+    </footer>
+</div>
+
+  <!-- ==================== WIREFRAME 3: MODERN MINIMALIST ==================== -->
+  <div id="wireframe3" class="wireframe-3 hidden font-serif">
+  <section class="bg-[#f9f7f2] min-h-screen relative overflow-hidden border-b-4 border-[#8b2b24]">
+    <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');"></div>
+    
+    <nav class="relative z-10 flex items-center justify-between px-16 py-8 max-w-8xl mx-auto border-b border-stone-200/60">
+      <div class="flex items-center gap-3">
+        <div class="w-32 h-24 bg-white p-2 border border-stone-200 shadow-sm rotate-1">
+          <img src="/washoku.png" class="w-full h-full object-contain" alt="Washoku Logo">
+        </div>
+      </div>
+      <div class="flex gap-12 text-stone-800 font-medium tracking-widest uppercase text-sm">
+        <a href="#sauces3" class="hover:text-[#8b2b24] transition-colors border-b border-transparent hover:border-[#8b2b24]">Products / 商品</a>
+        <a href="#recipes3" class="hover:text-[#8b2b24] transition-colors border-b border-transparent hover:border-[#8b2b24]">Recipes / レシピ</a>
+        <a href="#cart3" class="flex items-center gap-2 group">
+           <span class="w-6 h-6 bg-[#8b2b24] text-white rounded-full flex items-center justify-center text-[10px]">3</span>
+           <span class="group-hover:text-[#8b2b24]">Cart</span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="relative z-10 max-w-8xl mx-auto px-16 py-32 flex items-center">
+      <div class="absolute right-20 top-40 hidden lg:block opacity-20 select-none">
+        <p class="text-7xl font-bold leading-relaxed tracking-[1.5em]" style="writing-mode: vertical-rl;">
+          伝統の味
+        </p>
+      </div>
+
+      <div class="flex-1">
+        <div class="flex items-center gap-4 mb-6">
+          <span class="h-px w-12 bg-[#8b2b24]"></span>
+          <span class="text-[#8b2b24] font-bold tracking-widest text-sm">SINCE 1924</span>
+        </div>
+        <h1 class="text-8xl font-bold text-stone-900 leading-tight mb-8">
+          Crafting <br>
+          <span class="relative">
+            Harmony.
+            <svg class="absolute -bottom-2 left-0 w-full h-3 text-[#8b2b24]/30" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 25 0, 50 5 T 100 5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </span>
+        </h1>
+        <p class="text-stone-700 text-xl max-w-md mb-12 leading-loose italic border-l-2 border-[#8b2b24] pl-6">
+          Honoring the delicate balance of sweetness, acidity, and umami. A century of tradition in every drop.
+        </p>
+        <div class="flex gap-6">
+          <button class="bg-[#8b2b24] hover:bg-[#6d211c] text-white px-10 py-4 shadow-lg transition-all flex items-center gap-3 group">
+            Explore the Collection
+            <span class="group-hover:translate-x-1 transition-transform">→</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="flex-1 flex justify-center">
+        <div class="relative group">
+          <div class="w-[450px] h-[450px] border border-stone-200 rounded-full flex items-center justify-center bg-white shadow-inner relative overflow-hidden">
+             <div class="absolute inset-0 bg-[radial-gradient(circle,_#fff_0%,_#f9f7f2_100%)]"></div>
+             <div class="relative flex gap-2 z-10">
+                <div class="w-20 h-52 bg-[#1a1a1a] border-t-8 border-[#8b2b24] shadow-2xl transition-transform hover:-translate-y-4"></div>
+                <div class="w-20 h-52 bg-[#8b2b24] border-t-8 border-[#fcd34d] shadow-2xl transition-transform hover:-translate-y-2"></div>
+                <div class="w-20 h-52 bg-[#fcd34d] border-t-8 border-[#1a1a1a] shadow-2xl transition-transform hover:-translate-y-6"></div>
+             </div>
+          </div>
+          <div class="absolute bottom-10 -right-4 w-24 h-24 border-2 border-[#8b2b24] flex flex-col items-center justify-center rotate-12 bg-white/80 backdrop-blur-sm">
+             <p class="text-[#8b2b24] font-bold text-xs">匠の品質</p>
+             <p class="text-[#8b2b24] text-2xl font-black">4.9</p>
+             <p class="text-[#8b2b24] text-[8px]">RATING</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-[#f9f7f2] py-32 relative overflow-hidden border-b border-stone-200">
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');"></div>
+
+  <div class="max-w-7xl mx-auto px-16 relative z-10">
+    <div class="flex flex-col items-center mb-20 text-center">
+      <p class="text-[#8b2b24] font-bold tracking-[0.3em] text-xs mb-4 uppercase">お料理の様子 · Culinary Scene</p>
+      <h2 class="text-5xl font-bold text-stone-900 tracking-tighter">Watch the <span class="relative italic">Craft.<svg class="absolute -bottom-1 left-0 w-full h-2 text-[#8b2b24]/20" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 25 0, 50 5 T 100 5" fill="none" stroke="currentColor" stroke-width="2"/></svg></span></h2>
+    </div>
+
+    <div class="bg-white border border-stone-200 shadow-sm overflow-hidden group">
+      <div class="flex flex-col lg:flex-row">
+        
+        <div class="lg:w-2/3 aspect-video relative bg-stone-100 flex items-center justify-center overflow-hidden">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_#f9f7f2_0%,_#e5e2d9_100%)] opacity-50"></div>
+          
+          <div class="relative z-20 w-24 h-24 rounded-full bg-white border border-stone-200 flex items-center justify-center shadow-xl transition-transform duration-500 group-hover:scale-110 cursor-pointer">
+            <div class="w-20 h-20 rounded-full border border-[#8b2b24]/20 flex items-center justify-center">
+               <span class="text-[#8b2b24] text-3xl ml-2">▶</span>
+            </div>
+          </div>
+
+          <div class="absolute top-8 right-8 text-8xl font-bold opacity-5 select-none text-stone-900" style="writing-mode: vertical-rl;">
+            職人の技
+          </div>
+
+          <div class="absolute bottom-8 left-8 flex items-center gap-3">
+             <span class="w-2 h-2 bg-[#8b2b24] rounded-full animate-pulse"></span>
+             <span class="text-[10px] font-bold tracking-widest text-stone-500 uppercase">Behind the Scenes / 舞台裏</span>
+          </div>
+        </div>
+
+        <div class="lg:w-1/3 p-12 flex flex-col justify-center border-l border-stone-100">
+          <span class="text-[#8b2b24] font-bold text-xs tracking-widest mb-4">EPISODE 01</span>
+          <h3 class="text-3xl font-bold text-stone-900 mb-6 leading-tight">Teriyaki <br>in Motion</h3>
+          <p class="text-stone-600 text-sm leading-loose mb-10 italic">
+            "The secret is not in the ingredients, but in the patience of the simmer." Watch our master brewer tend to the copper vats.
+          </p>
+          
+          <button class="bg-[#8b2b24] text-white px-8 py-4 text-xs font-bold tracking-[0.2em] uppercase hover:bg-[#6d211c] transition-all text-center">
+            Watch Full Story →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 flex justify-center">
+      <div class="flex items-center gap-6">
+        <span class="h-px w-16 bg-stone-200"></span>
+        <p class="text-[10px] tracking-[0.4em] text-stone-400 font-bold uppercase">Brewed with Integrity</p>
+        <span class="h-px w-16 bg-stone-200"></span>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="sauces3" class="bg-white py-32 border-b border-stone-100">
+    <div class="max-w-7xl mx-auto px-16">
+      <div class="flex flex-col items-center mb-24 text-center">
+        <h2 class="text-4xl font-bold text-stone-900 mb-4 tracking-tighter">The Foundations of Flavor</h2>
+        <div class="w-16 h-1 bg-[#8b2b24] mb-6"></div>
+        <p class="text-stone-500 max-w-xl">Every bottle is brewed with spring water from the Japanese Alps and aged in cedar casks.</p>
+      </div>
+
+      <div class="grid grid-cols-3 gap-16">
+        <div class="text-center group">
+          <div class="relative mb-8 aspect-[2/3] bg-[#f9f7f2] flex items-center justify-center border border-stone-100 group-hover:border-[#8b2b24] transition-colors overflow-hidden">
+            <div class="w-24 h-48 bg-stone-900 shadow-2xl group-hover:scale-105 transition-transform duration-700"></div>
+            <div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-[#8b2b24] text-white text-xs font-bold tracking-widest uppercase">
+              Add to Basket +
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold text-stone-900 mb-2">Classic Teriyaki</h3>
+          <p class="text-[#8b2b24] font-bold mb-4">$Price</p>
+          <div class="h-px w-8 bg-stone-200 mx-auto"></div>
+        </div>
+        <div class="text-center group">
+          <div class="relative mb-8 aspect-[2/3] bg-[#f9f7f2] flex items-center justify-center border border-stone-100 group-hover:border-[#8b2b24] transition-colors overflow-hidden">
+            <div class="w-24 h-48 bg-[#8b2b24] shadow-2xl group-hover:scale-105 transition-transform duration-700"></div>
+            <div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-[#8b2b24] text-white text-xs font-bold tracking-widest uppercase">
+              Add to Basket +
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold text-stone-900 mb-2">Spicy Miso</h3>
+          <p class="text-[#8b2b24] font-bold mb-4">$price</p>
+          <div class="h-px w-8 bg-stone-200 mx-auto"></div>
+        </div>
+        <div class="text-center group">
+          <div class="relative mb-8 aspect-[2/3] bg-[#f9f7f2] flex items-center justify-center border border-stone-100 group-hover:border-[#8b2b24] transition-colors overflow-hidden">
+            <div class="w-24 h-48 bg-[#fcd34d] shadow-2xl group-hover:scale-105 transition-transform duration-700"></div>
+            <div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-[#8b2b24] text-white text-xs font-bold tracking-widest uppercase">
+              Add to Basket +
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold text-stone-900 mb-2">Citrus Ponzu</h3>
+          <p class="text-[#8b2b24] font-bold mb-4">$Price</p>
+          <div class="h-px w-8 bg-stone-200 mx-auto"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recipes3" class="bg-[#f2f0ea] py-32">
+    <div class="max-w-7xl mx-auto px-16">
+      <div class="flex justify-between items-end mb-16">
+        <div>
+           <h2 class="text-5xl font-bold text-stone-900">Seasonal Recipes</h2>
+           <p class="text-stone-500 mt-4 italic">Enjoy the "Shun" (seasonal peaks) of Japanese ingredients.</p>
+        </div>
+        <button class="border-b-2 border-stone-900 font-bold pb-1 hover:text-[#8b2b24] hover:border-[#8b2b24] transition-all">View All Recipes</button>
+      </div>
+
+      <div class="grid grid-cols-2 gap-12">
+        <div class="bg-white p-8 flex gap-8 items-center border border-stone-200 hover:shadow-2xl transition-shadow group">
+          <div class="w-1/2 aspect-square bg-stone-100 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-7xl group-hover:scale-110 transition-transform duration-700">🍗</div>
+          </div>
+          <div class="w-1/2">
+            <span class="text-[#8b2b24] font-bold text-xs tracking-widest">POULTRY</span>
+            <h4 class="text-2xl font-bold mt-2 mb-4">Slow-Roasted Teriyaki Chicken</h4>
+            <p class="text-stone-500 text-sm mb-6 leading-relaxed">A traditional technique involving triple-glazing for the perfect mahogany finish.</p>
+            <span class="text-xs font-bold border px-3 py-1 border-stone-300">25 MINS</span>
+          </div>
+        </div>
+        <div class="bg-white p-8 flex gap-8 items-center border border-stone-200 hover:shadow-2xl transition-shadow group">
+          <div class="w-1/2 aspect-square bg-stone-100 overflow-hidden">
+            <div class="w-full h-full flex items-center justify-center text-7xl group-hover:scale-110 transition-transform duration-700">🍜</div>
+          </div>
+          <div class="w-1/2">
+            <span class="text-[#8b2b24] font-bold text-xs tracking-widest">NOODLES</span>
+            <h4 class="text-2xl font-bold mt-2 mb-4">Midnight Miso Ramen</h4>
+            <p class="text-stone-500 text-sm mb-6 leading-relaxed">Rich, fermented depth meet chewy handmade noodles in this kitchen staple.</p>
+            <span class="text-xs font-bold border px-3 py-1 border-stone-300">45 MINS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart3" class="bg-white py-24 border-t border-stone-100">
+  <div class="max-w-4xl mx-auto px-16">
+    <div class="text-center mb-16">
+      <span class="text-[#8b2b24] font-bold tracking-[0.2em] text-xs">YOUR SELECTION</span>
+      <h2 class="text-4xl font-bold text-stone-900 mt-2">Shopping Bag / 買い物籠</h2>
+    </div>
+
+    <div class="border border-stone-200 p-8 shadow-sm">
+      <div class="flex items-center justify-between py-6 border-b border-stone-100">
+        <div class="flex items-center gap-6">
+          <div class="w-16 h-20 bg-[#f9f7f2] border border-stone-100 flex items-center justify-center">
+            <div class="w-4 h-12 bg-stone-900"></div>
+          </div>
+          <div>
+            <h4 class="font-bold text-stone-900 text-lg">Classic Teriyaki</h4>
+            <p class="text-stone-400 text-xs tracking-widest">200ml • Traditional Brew</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-8">
+          <div class="flex items-center border border-stone-200">
+            <button class="px-3 py-1 hover:bg-stone-50">−</button>
+            <span class="px-3 py-1 font-bold text-sm">1</span>
+            <button class="px-3 py-1 hover:bg-stone-50">+</button>
+          </div>
+          <span class="font-bold text-stone-900 w-20 text-right">$Price</span>
+        </div>
+      </div>
+
+      <div class="mt-12 bg-[#f9f7f2] p-8">
+        <div class="flex justify-between mb-4 text-stone-600 text-sm italic">
+          <span>Subtotal / 小計</span>
+          <span>$Price</span>
+        </div>
+        <div class="flex justify-between mb-4 text-stone-600 text-sm italic border-b border-stone-200 pb-4">
+          <span>Shipping / 送料</span>
+          <span class="text-[#8b2b24]">Complimentary</span>
+        </div>
+        <div class="flex justify-between text-2xl font-bold text-stone-900 pt-2">
+          <span>Total / 合計</span>
+          <span>$Total Price</span>
+        </div>
+        <button class="w-full mt-10 bg-stone-900 hover:bg-[#8b2b24] text-white py-5 transition-all font-bold tracking-widest uppercase text-sm">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="bg-[#1a1a1a] text-stone-400 py-24">
+    <div class="max-w-7xl mx-auto px-16 grid grid-cols-3 gap-24">
+      <div>
+        <div class="flex items-center gap-2 mb-8">
+          <span class="text-3xl font-bold text-white tracking-tighter">washuko</span>
+          <span class="w-2 h-2 bg-[#8b2b24] rounded-full"></span>
+        </div>
+        <p class="text-sm leading-loose">We are dedicated to preserving the art of Japanese fermentation. From our brewery to your table, we share the heart of Washoku.</p>
+      </div>
+      <div>
+        <h5 class="text-white font-bold mb-8 uppercase tracking-widest text-xs">Navigation</h5>
+        <ul class="space-y-4 text-sm">
+          <li><a href="#" class="hover:text-white transition-colors">Our Story</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Sustainability</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Brewing Process</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-bold mb-8 uppercase tracking-widest text-xs">Newsletter</h5>
+        <div class="flex border-b border-stone-700 pb-2">
+          <input type="email" placeholder="Your email" class="bg-transparent border-none focus:ring-0 text-sm w-full">
+          <button class="text-white text-sm font-bold">JOIN</button>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-16 mt-24 pt-8 border-t border-stone-800 flex justify-between text-[10px] tracking-widest uppercase">
+      <p>© 2024 WASHUKU TRADITIONAL BREWERY</p>
+      <p>TOKYO // KYOTO // OSAKA</p>
+    </div>
+  </footer>
+</div>
+
+  <!-- ==================== AESTHETIC GUIDE ==================== -->
+  <div id="wireframe4" class="hidden h-full overflow-auto font-serif">
+  <div class="bg-[#1a1a1a] text-stone-100 min-h-full py-16">
+    <div class="max-w-6xl mx-auto px-8">
+      
+      <div class="text-center mb-20">
+        <span class="text-[#8b2b24] font-bold tracking-[0.3em] text-xs uppercase">Design Selection</span>
+        <h1 class="text-6xl font-bold mb-4 mt-2">The Soul of Washoku</h1>
+        <p class="text-stone-400 text-lg max-w-2xl mx-auto italic">Refining your brand's digital presence through three distinct lenses of Japanese heritage.</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-12">
+        
+        <div class="bg-[#fdf9f0] border border-stone-200 rounded-sm overflow-hidden shadow-xl">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="p-12 bg-[#fffcf5] border-r border-stone-100 flex flex-col justify-center">
+              <h2 class="text-3xl font-bold text-amber-900 mb-4">🏠 Warm & Cozy</h2>
+              <p class="text-stone-700 text-lg leading-relaxed mb-8">Focuses on the "Okan" (mother's) kitchen. It emphasizes comfort, generational storytelling, and the approachability of home-cooked meals.</p>
+              <div class="space-y-4">
+                <div class="flex items-center gap-4 text-sm tracking-wide text-amber-900 font-bold uppercase">
+                  <span class="w-8 h-px bg-amber-900"></span> Palate: Amber, Soy-Brown, Miso-Cream
+                </div>
+                <div class="flex items-center gap-4 text-sm tracking-wide text-amber-900 font-bold uppercase">
+                  <span class="w-8 h-px bg-amber-900"></span> Mood: Nostalgic, Inviting, Handcrafted
+                </div>
+              </div>
+            </div>
+            <div class="p-12 bg-white flex flex-col justify-center items-center text-center">
+              <p class="text-stone-500 mb-8 italic">"Perfect for connecting with families and home cooks who value tradition and the 'story' behind the sauce."</p>
+              <button onclick="showWireframe(1)" class="w-full bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 font-bold tracking-widest transition-all">EXPLORE CONCEPT 1</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#2a2a2a] border border-stone-800 rounded-sm overflow-hidden shadow-xl">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="p-12 bg-stone-900 flex flex-col justify-center">
+              <h2 class="text-3xl font-bold text-amber-100 mb-4">👑 Elegant Traditional</h2>
+              <p class="text-stone-400 text-lg leading-relaxed mb-8">The "Ginza" experience. This aesthetic positions your brand as a luxury artisanal producer, using deep shadows and gold accents.</p>
+              <div class="space-y-4">
+                <div class="flex items-center gap-4 text-sm tracking-wide text-amber-100 font-bold uppercase">
+                  <span class="w-8 h-px bg-amber-100"></span> Palate: Sumi-Ink, Gold Leaf, Charcoal
+                </div>
+                <div class="flex items-center gap-4 text-sm tracking-wide text-amber-100 font-bold uppercase">
+                  <span class="w-8 h-px bg-amber-100"></span> Mood: Sophisticated, Timeless, Exclusive
+                </div>
+              </div>
+            </div>
+            <div class="p-12 bg-[#1f1f1f] flex flex-col justify-center items-center text-center">
+              <p class="text-stone-400 mb-8 italic">"Best for high-end gifting, premium positioning, and food connoisseurs who seek the ultimate quality."</p>
+              <button onclick="showWireframe(2)" class="w-full bg-stone-100 hover:bg-amber-100 text-stone-900 px-8 py-4 font-bold tracking-widest transition-all">EXPLORE CONCEPT 2</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#f9f7f2] border-t-4 border-[#8b2b24] rounded-sm overflow-hidden shadow-xl">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="p-12 bg-white border-r border-stone-100 flex flex-col justify-center relative">
+              <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');"></div>
+              <h2 class="text-3xl font-bold text-stone-900 mb-4">🎋 Traditional Washoku</h2>
+              <p class="text-stone-600 text-lg leading-relaxed mb-8">Inspired by Otafuku. A perfect balance of clean white space, "Shu-iro" red accents, and traditional washi-texture layouts.</p>
+              <div class="space-y-4">
+                <div class="flex items-center gap-4 text-sm tracking-wide text-[#8b2b24] font-bold uppercase">
+                  <span class="w-8 h-px bg-[#8b2b24]"></span> Palate: Cinnabar Red, Bone White, Ink
+                </div>
+                <div class="flex items-center gap-4 text-sm tracking-wide text-[#8b2b24] font-bold uppercase">
+                  <span class="w-8 h-px bg-[#8b2b24]"></span> Mood: Authentic, Artisanal, Harmonious
+                </div>
+              </div>
+            </div>
+            <div class="p-12 bg-[#f9f7f2] flex flex-col justify-center items-center text-center">
+              <p class="text-stone-500 mb-8 italic">"Ideal for a brand that wants to feel both culturally authentic and modernly accessible. The standard for Japanese food icons."</p>
+              <button onclick="showWireframe(3)" class="w-full bg-[#8b2b24] hover:bg-[#6d211c] text-white px-8 py-4 font-bold tracking-widest transition-all">EXPLORE CONCEPT 3</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-20 border border-stone-800 bg-[#222]">
+        <div class="p-10">
+          <h3 class="text-2xl font-bold text-amber-100 mb-8 text-center uppercase tracking-widest">Brand Comparison</h3>
+          <div class="overflow-x-auto">
+            <table class="w-full text-stone-300 text-sm">
+              <thead>
+                <tr class="border-b border-stone-700">
+                  <th class="text-left py-4 px-4 text-[#8b2b24]">Element</th>
+                  <th class="text-left py-4 px-4 text-amber-500">Warm & Cozy</th>
+                  <th class="text-left py-4 px-4 text-stone-100">Elegant Traditional</th>
+                  <th class="text-left py-4 px-4 text-[#8b2b24]">Traditional Washoku</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-stone-800">
+                <tr><td class="py-6 px-4 font-bold">Primary Vibe</td><td class="py-6 px-4">Home / Family</td><td class="py-6 px-4">Luxury / Art</td><td class="py-6 px-4">Authentic / Craft</td></tr>
+                <tr><td class="py-6 px-4 font-bold">Typography</td><td class="py-6 px-4">Rounded / Soft</td><td class="py-6 px-4">Classic Serif / Thin</td><td class="py-6 px-4">Bold Serif / Vertical</td></tr>
+                <tr><td class="py-6 px-4 font-bold">Iconography</td><td class="py-6 px-4">Hand-drawn / Emojis</td><td class="py-6 px-4">Gold Foil / Minimal</td><td class="py-6 px-4">Calligraphy / Stamps</td></tr>
+                <tr><td class="py-6 px-4 font-bold">Target Price</td><td class="py-6 px-4">Standard ($)</td><td class="py-6 px-4">Ultra-Premium ($$$)</td><td class="py-6 px-4">Artisanal ($$)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <script>
+    function showWireframe(num) {
+      document.getElementById('wireframe1').classList.add('hidden');
+      document.getElementById('wireframe2').classList.add('hidden');
+      document.getElementById('wireframe3').classList.add('hidden');
+      document.getElementById('wireframe4').classList.add('hidden');
+      document.getElementById('tab1').className = 'px-6 py-2 rounded-full text-sm font-medium transition-all bg-stone-700 text-stone-300 hover:bg-stone-600';
+      document.getElementById('tab2').className = 'px-6 py-2 rounded-full text-sm font-medium transition-all bg-stone-700 text-stone-300 hover:bg-stone-600';
+      document.getElementById('tab3').className = 'px-6 py-2 rounded-full text-sm font-medium transition-all bg-stone-700 text-stone-300 hover:bg-stone-600';
+      document.getElementById('tab4').className = 'px-6 py-2 rounded-full text-sm font-medium transition-all bg-stone-700 text-stone-300 hover:bg-stone-600';
+      document.getElementById('wireframe' + num).classList.remove('hidden');
+      document.getElementById('tab' + num).className = 'px-6 py-2 rounded-full text-sm font-medium transition-all bg-amber-500 text-stone-900';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function showFeedbackSuccess(num) {
+      const form = event.target;
+      form.classList.add('hidden');
+      document.getElementById('feedback-success-' + num).classList.remove('hidden');
+    }
+  </script>
+ </body>
+</html>
