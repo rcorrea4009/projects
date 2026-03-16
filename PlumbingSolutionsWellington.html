@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Plumbing Solutions Wellington | 5.0 ★ Plumber</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Font: Montserrat + Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f5f7fa;
+            color: #1e2b37;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            width: 100%;
+        }
+
+        /* === BRAND STYLE - Dark teal + coral accents === */
+        .accent-text {
+            color: #ff6b4a;
+        }
+
+        .bg-accent {
+            background: #ff6b4a;
+        }
+
+        /* === TOP ALERT BAR === */
+        .top-alert {
+            background: #0a2e3f;
+            color: #e0eef7;
+            padding: 10px 0;
+            font-size: 0.9rem;
+            border-bottom: 3px solid #ff6b4a;
+        }
+
+        .top-alert .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .alert-phone {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+        }
+
+        .alert-phone i {
+            color: #ff6b4a;
+        }
+
+        .alert-phone a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .alert-phone a:hover {
+            color: #ff6b4a;
+        }
+
+        .alert-hours {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .alert-hours i {
+            color: #ff6b4a;
+        }
+
+        /* === HEADER / NAVIGATION - FIXED === */
+        header {
+            background: white;
+            padding: 20px 0;
+            border-bottom: 1px solid #e9ecf0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #0a2e3f;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #ff6b4a;
+            display: block;
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            color: #1e3b4e;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.2s;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-links a:hover,
+        .nav-links .active {
+            color: #ff6b4a;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: #0a2e3f;
+            cursor: pointer;
+        }
+
+        /* === HERO SECTION === */
+        .hero {
+            background: linear-gradient(145deg, #ffffff 0%, #f2f6fc 100%);
+            padding: 60px 0 40px;
+            border-bottom: 1px solid #dce5ed;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #0a2e3f;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .hero-content h2 span {
+            color: #ff6b4a;
+            display: block;
+            font-size: 2rem;
+        }
+
+        .hero-rating {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            padding: 12px 25px;
+            border-radius: 60px;
+            box-shadow: 0 8px 18px rgba(10,46,63,0.08);
+            margin: 20px 0 25px;
+            border: 1px solid #d9e2ec;
+        }
+
+        .stars {
+            color: #ffb347;
+            font-size: 1.3rem;
+            letter-spacing: 3px;
+        }
+
+        .rating-number {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #0a2e3f;
+        }
+
+        .review-count {
+            color: #5d7f9c;
+            font-weight: 500;
+        }
+
+        .hero-badges {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: white;
+            padding: 10px 22px;
+            border-radius: 40px;
+            font-weight: 600;
+            color: #0a2e3f;
+            border: 1px solid #d0ddee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .badge i {
+            color: #ff6b4a;
+        }
+
+        .hero-stats {
+            background: #0a2e3f;
+            color: white;
+            border-radius: 30px;
+            padding: 35px 30px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ff6b4a;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 10px 0 25px;
+        }
+
+        .stat-phone a {
+            display: inline-block;
+            background: #ff6b4a;
+            color: white;
+            text-decoration: none;
+            padding: 16px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.3rem;
+            transition: background 0.2s;
+            width: 100%;
+        }
+
+        .stat-phone a:hover {
+            background: #e85533;
+        }
+
+        /* === INFO GRID - FIXED (removed nav links from here) === */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 40px 0 20px;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 20px;
+            padding: 22px 20px;
+            border: 1px solid #e2ebf5;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            transition: 0.2s;
+        }
+
+        .info-card:hover {
+            box-shadow: 0 10px 25px rgba(10,46,63,0.06);
+        }
+
+        .info-icon {
+            width: 55px;
+            height: 55px;
+            background: #f0f7ff;
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff6b4a;
+            font-size: 1.8rem;
+        }
+
+        .info-text h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #0a2e3f;
+            margin-bottom: 5px;
+        }
+
+        .info-text p {
+            color: #446688;
+        }
+
+        .info-text a {
+            color: #0a2e3f;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .info-text a:hover {
+            color: #ff6b4a;
+        }
+
+        /* === SECTION TITLES === */
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #0a2e3f;
+            margin: 50px 0 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: #ff6b4a;
+            border-radius: 4px;
+        }
+
+        .section-title.center {
+            text-align: center;
+        }
+
+        .section-title.center::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* === ABOUT SECTION === */
+        .about-section {
+            background: white;
+            border-radius: 30px;
+            padding: 50px;
+            margin: 40px 0;
+            border: 1px solid #e2ecf5;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text p {
+            font-size: 1.1rem;
+            color: #2a4058;
+            margin-bottom: 20px;
+        }
+
+        .about-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f0f7ff;
+            padding: 12px 22px;
+            border-radius: 40px;
+            font-weight: 600;
+        }
+
+        .about-feature i {
+            color: #ff6b4a;
+            font-size: 1.2rem;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .stat-box {
+            background: #0a2e3f;
+            color: white;
+            padding: 30px 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .stat-box .number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ff6b4a;
+        }
+
+        .stat-box .label {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        /* === SERVICES SECTION === */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 30px;
+            padding: 35px 25px;
+            border: 1px solid #e2ecf5;
+            transition: 0.25s;
+            text-align: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 35px rgba(10,46,63,0.08);
+            border-color: #ff6b4a;
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: #f0f7ff;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            color: #ff6b4a;
+            font-size: 2.5rem;
+        }
+
+        .service-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #0a2e3f;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #446688;
+        }
+
+        /* === REVIEWS SECTION === */
+        .reviews-section {
+            background: white;
+            border-radius: 40px;
+            padding: 50px 40px;
+            margin: 50px 0;
+            border: 1px solid #e2ecf5;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .testimonial-item {
+            background: #f8fbfe;
+            border-radius: 24px;
+            padding: 28px;
+            border: 1px solid #e2ecf5;
+            transition: 0.2s;
+            height: fit-content;
+        }
+
+        .testimonial-item:hover {
+            box-shadow: 0 10px 25px rgba(10,46,63,0.05);
+        }
+
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-name h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #0a2e3f;
+        }
+
+        .testimonial-name .role {
+            font-size: 0.85rem;
+            color: #ff6b4a;
+            font-weight: 600;
+        }
+
+        .testimonial-stars {
+            color: #ffb347;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-text {
+            color: #2a4058;
+            font-size: 0.98rem;
+            line-height: 1.7;
+            margin: 15px 0;
+        }
+
+        .testimonial-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            color: #7f9bb5;
+            font-size: 0.85rem;
+        }
+
+        /* === CTA SECTION === */
+        .cta-section {
+            background: #0a2e3f;
+            color: white;
+            border-radius: 40px;
+            padding: 60px 40px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .cta-section h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .cta-section .cta-phone {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ff6b4a;
+            text-decoration: none;
+            border-bottom: 3px solid rgba(255,107,74,0.3);
+            padding-bottom: 5px;
+        }
+
+        .cta-section .cta-phone:hover {
+            color: #ff8a6a;
+        }
+
+        /* === MAP SECTION === */
+        .map-wrapper {
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            margin: 40px 0;
+        }
+
+        .map-wrapper iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            display: block;
+        }
+
+        /* === FOOTER === */
+        footer {
+            background: #0f2633;
+            color: #aac3d4;
+            padding: 50px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-logo span {
+            color: #ff6b4a;
+        }
+
+        .footer-links h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #aac3d4;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #ff6b4a;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #1e3f52;
+            padding-top: 25px;
+            font-size: 0.9rem;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 1100px) {
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+                border-top: 1px solid #e0ecf5;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            .reviews-section {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+            .cta-section .cta-phone {
+                font-size: 1.8rem;
+            }
+            .about-section {
+                padding: 30px 20px;
+            }
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- top alert bar -->
+    <div class="top-alert">
+        <div class="container">
+            <div class="alert-phone">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+6421738121">021 738 121</a>
+            </div>
+            <div class="alert-hours">
+                <i class="fas fa-clock"></i>
+                <span>Open 24 hours · Emergency</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- header with navigation - FIXED: nav is properly in header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Plumbing Solutions<span>Wellington</span></h1>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#findus">Find Us</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Expert Plumbing <span>in Wellington</span></h2>
+                <div class="hero-badges">
+                    <div class="badge"><i class="fas fa-check-circle"></i> 24/7 Emergency</div>
+                    <div class="badge"><i class="fas fa-shield-alt"></i> Licensed & Insured</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO CARDS - FIXED: Now only shows contact info, no navigation -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-section">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-map-pin"></i></div>
+                    <div class="info-text">
+                        <h4>Address</h4>
+                        <p>1 Cara Crescent, Paparangi<br>Wellington 6037</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-phone"></i></div>
+                    <div class="info-text">
+                        <h4>Call anytime</h4>
+                        <p><a href="tel:+6421738121">021 738 121</a></p>
+                        <p style="color:#ff6b4a;">24/7 emergency</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-clock"></i></div>
+                    <div class="info-text">
+                        <h4>Open 24/7</h4>
+                        <p>Always available<br>for emergencies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-section">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Plumbing Solutions Wellington is your trusted local plumbing expert, serving the Wellington region with pride and professionalism. Led by Simon, our team brings years of experience and a commitment to excellence in every job, big or small.</p>
+                    <p>We believe in transparent communication, fair pricing, and lasting solutions. Whether it's an emergency leak in the middle of the night or a full bathroom renovation, we treat every project with the same dedication and attention to detail.</p>
+                    <div class="about-features">
+                        <div class="about-feature"><i class="fas fa-check-circle"></i> 24/7 Emergency</div>
+                        <div class="about-feature"><i class="fas fa-check-circle"></i> Licensed & Insured</div>
+                        <div class="about-feature"><i class="fas fa-check-circle"></i> Free Quotes</div>
+                        <div class="about-feature"><i class="fas fa-check-circle"></i> Insurance Work</div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="number">23</div>
+                        <div class="label">5-Star Reviews</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="number">24/7</div>
+                        <div class="label">Emergency Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-wrench"></i></div>
+                <h3>General Plumbing</h3>
+                <p>Leaky taps, blocked drains, pipe repairs, and all general plumbing maintenance.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Emergency Repairs</h3>
+                <p>24/7 rapid response for burst pipes, gas leaks, and urgent plumbing issues.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-bath"></i></div>
+                <h3>Bathroom Renovations</h3>
+                <p>Full bathroom remodels, fixture installations, and waterproofing.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-fire"></i></div>
+                <h3>Hot Water Systems</h3>
+                <p>Installation, repair, and replacement of gas and electric hot water cylinders.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-toilet"></i></div>
+                <h3>Toilet Repairs</h3>
+                <p>Leaking toilets, cistern repairs, and full toilet replacements.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-home"></i></div>
+                <h3>Gas Fitting</h3>
+                <p>Gas appliance installation, leak detection, and gas line repairs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <div class="container">
+        <div class="cta-section">
+            <h3>Emergency? Need a plumber now?</h3>
+            <p style="font-size:1.2rem; margin-bottom:25px;">Simon is available 24/7 for urgent plumbing issues</p>
+            <a href="tel:+6421738121" class="cta-phone"><i class="fas fa-phone-alt"></i> 021 738 121</a>
+            <p style="margin-top:25px; opacity:0.9;">Open 24 hours · 7 days a week</p>
+        </div>
+    </div>
+
+    <!-- REVIEWS SECTION -->
+    <section id="reviews" class="container">
+        <div class="reviews-section">
+            <h2 class="section-title center">Customer Reviews</h2>
+            <p style="text-align: center; color: #446688; margin-bottom: 20px;">23 reviews · 5.0 ★ average</p>
+            
+            <div class="testimonial-grid">
+                <!-- Rod Dimock -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Rod Dimock</h4>
+                            <span class="role">3 reviews · 1 month ago</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        Simon did a great job repairing some spouting & couple other maint items at short notice. He fitted us in at end of a busy week & was very helpful & kept us well informed.
+                    </div>
+                    <div class="testimonial-footer">
+                        <span><i class="far fa-thumbs-up"></i> Helpful</span>
+                    </div>
+                </div>
+                <!-- sabrina tulia -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>sabrina tulia</h4>
+                            <span class="role">1 review · 7 months ago</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        Highly Recommend – Outstanding Service from Simon at Plumbing Solutions Wellington! Simon was an absolute legend helping my husband and me with our DIY bathroom and …
+                    </div>
+                </div>
+                <!-- Hannah Rollo -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Hannah Rollo</h4>
+                            <span class="role">13 reviews · 5 photos</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        I was impressed from my first contact with Simon. He is highly professional, responding promptly to my enquiries and working with me and the required suppliers to meet my needs. Simon did an outstanding job.
+                    </div>
+                </div>
+                <!-- Sophia Smart -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Sophia Smart</h4>
+                            <span class="role">12 reviews · 8 photos</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        We used Plumbing Solutions for a toilet leak/insurance job. The service was outstanding. Great communication & very professional. Very happy with the repair & was so happy we even got them back to replace a tap and plug!
+                    </div>
+                    <div class="testimonial-footer">
+                        <span><i class="far fa-thumbs-up"></i> Awesome</span>
+                    </div>
+                </div>
+                <!-- Sheree Moanaroa -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Sheree Moanaroa</h4>
+                            <span class="role">Local Guide · 8 reviews</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        Honestly, can not recommend these guys enough! They were so quick to respond, arrive and fix my issue, even though it was after hours. Simon was also really lovely to deal with. Plumbing Solutions will definitely be my go to from now on.
+                    </div>
+                    <div class="testimonial-footer">
+                        <span>⭐ Local Guide</span>
+                    </div>
+                </div>
+                <!-- Vincent Leese -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Vincent Leese</h4>
+                            <span class="role">1 review</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        Throughout the project, Simon was reliable, flexible when we required flexibility, communication was excellent and the work was completed to the highest quality. I have no hesitation in recommending Plumbing solutions Wellington Ltd.
+                    </div>
+                </div>
+                <!-- Rive Tunupopo -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Rive Tunupopo</h4>
+                            <span class="role">3 reviews</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        Stand out service. We had contacted a couple of companies prior to finding Plumbing Solutions and Simons comms were by far the best. Not to mention the amazing work he did. Highly recommend!
+                    </div>
+                </div>
+                <!-- R & K -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>R & K</h4>
+                            <span class="role">8 reviews</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        Simon from Plumbing solutions was great to deal with. We received our quote quickly and we're really happy with the price. Tidy and professional service, would recommend.
+                    </div>
+                </div>
+                <!-- Catie O'Connell -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Catie O'Connell</h4>
+                            <span class="role">3 reviews</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        Fantastic service from Simon when he did our bathroom. His communication was outstanding and he kept us up to date every step of the way. Highly recommend!
+                    </div>
+                </div>
+                <!-- Scott Mowat -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Scott Mowat</h4>
+                            <span class="role">1 review</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        5 Star service, I had an urgent issue with my toilet leaking, Simon knew exactly what the problem was, he temporarily fixed my leak until parts arrived, he then came back to replace the toilet mechanism. No overselling he just fixed the …
+                    </div>
+                </div>
+                <!-- Eriko Honjo -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Eriko Honjo</h4>
+                            <span class="role">10 reviews</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        We received the most fantastic service. He was very knowledgeable and skilled, and explained things so well that it provided reassurance for us. I highly recommend Plumbing Solutions WGTN!
+                    </div>
+                </div>
+                <!-- Bobby S -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Bobby S</h4>
+                            <span class="role">4 reviews</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        It was a pleasure to deal with Simon. Quick to respond, good communication, and it's clear he's not mucking around because he sorted out the leak in our kitchen in a jiff. Thanks again!
+                    </div>
+                    <div class="testimonial-footer">
+                        <span>⚡ Quick service</span>
+                    </div>
+                </div>
+                <!-- Jean-Paul Faisandier -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Jean-Paul Faisandier</h4>
+                            <span class="role">1 review</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        I highly recommend Plumbing Solutions Wellington. An excellent plumber who is very helpful and knows his stuff. Great service received from start to finish.
+                    </div>
+                </div>
+                <!-- Mhairi Thompson -->
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <div class="testimonial-name">
+                            <h4>Mhairi Thompson</h4>
+                            <span class="role">6 reviews · 3 photos</span>
+                        </div>
+                        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    </div>
+                    <div class="testimonial-text">
+                        Prompt and friendly service. Transparent on potential charges. Solved the issue quickly. Thank you!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section id="findus" class="container">
+        <h2 class="section-title">Find us</h2>
+        <div class="map-wrapper">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.23123456789!2d174.7912345!3d-41.212345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38aa123456789%3A0x123456789abcdef!2s1%20Cara%20Crescent%2C%20Paparangi%2C%20Wellington%206037!5e0!3m2!1sen!2snz!4v1700000000000" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <h3>Plumbing Solutions<span> Wellington</span></h3>
+                    <p style="margin-top:15px;">5.0 ★ rated plumber serving Wellington 24/7.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone" style="color:#ff6b4a;"></i> <a href="tel:+6421738121">021 738 121</a></li>
+                        <li><i class="fas fa-map-pin" style="color:#ff6b4a;"></i> 1 Cara Crescent</li>
+                        <li><i class="fas fa-clock" style="color:#ff6b4a;"></i> Open 24/7</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Info</h4>
+                    <ul>
+                        <li>5 rating reviews</li>
+                        <li>Licensed & insured</li>
+                        <li>Emergency service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2026 Plumbing Solutions Wellington. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu script -->
+    <script>
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const links = document.querySelectorAll('.nav-links a');
+
+        mobileBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+            const icon = mobileBtn.querySelector('i');
+            if (navLinks.classList.contains('show')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+                const icon = mobileBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Active nav highlighting
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            links.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
