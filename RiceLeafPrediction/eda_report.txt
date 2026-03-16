@@ -1,0 +1,36 @@
+
+        DATA ANALYSIS REPORT
+        =================================================================
+
+        DATASET OVERVIEW:
+        - Total Images: 238
+        - Number of Classes: 3
+        - Classes and counts:
+                  * Bacterial leaf blight: 80 images
+          * Brown spot: 80 images
+          * Leaf smut: 78 images
+
+        CLASS IMBALANCE ANALYSIS:
+        - Imbalance ratio: 1.03:1
+        - This is not a significant imbalance
+        
+        IMAGE CHARACTERISTICS:
+        - Format: Mixed (JPG, PNG, etc.)
+        - Color Space: RGB (3 channels)
+        - Dimensions vary across images
+
+        DATA QUALITY:
+        + All images are readable (verified)
+        + Good visual quality
+        + Clear disease symptoms visible
+        ! Slight class imbalance detected
+
+
+        RECOMMENDATIONS FOR MODELING:
+        1. Apply data augmentation to handle class imbalance
+        2. Use class weights in model training
+        3. Resize images to consistent dimensions
+        4. Normalize pixel values
+        5. Use stratified cross-validation
+        6. Consider transfer learning for better performance
+        
